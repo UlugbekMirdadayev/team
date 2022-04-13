@@ -480,10 +480,11 @@ main.home {
               img {
                 display: block;
                 margin: 0 auto;
-                width: 100%;
-                height: 100%;
+                width: 60%;
+                height: 60%;
                 object-fit: cover;
                 object-position: top;
+                border-radius: 10px;
               }
             }
           }
