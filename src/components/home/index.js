@@ -1,8 +1,7 @@
 import React from "react";
 import VanillaTilt from "vanilla-tilt";
-import { useForm } from "react-hook-form";
 import "./home.scss";
-import { ArrowSlide, ImgHome, Konsult, KonsultBg } from "../export/svg";
+import { ArrowSlide, ImgHome } from "../export/svg";
 const [
   Noutbook,
   Farhod,
@@ -10,7 +9,7 @@ const [
   Muhriddin,
   Anvarjon,
   Ulugbek,
-  AdvanFourth,
+  Xurshid,
   AdvanSecond,
   AdvanOne,
   ProblemSix,
@@ -42,10 +41,6 @@ const [
   Holon,
   RVK,
   mincomsv,
-  Appstore,
-  Googleplay,
-  Huawei,
-  MobileApp,
 ] = ImgHome;
 const Liders = [
   {
@@ -135,8 +130,8 @@ const Advantages = {
   pagination: [
     { name: "Загрузка материалов", id: 1 },
     { name: "Конструктор упражнений", id: 2 },
-    { name: "Управление обучением", id: 3 },
-    { name: "Ulug'bek Mirdadayev", id: 4 },
+    { name: "Ulug'bek Mirdadayev", id: 3 },
+    { name: "Xurshid Muminov ", id: 4 },
     { name: "Anvarjon Hujamov", id: 5 },
     { name: "Muhriddin Saidaliyev", id: 6 },
     { name: "Farrux Turg'unpolatov", id: 7 },
@@ -182,7 +177,7 @@ const Advantages = {
     },
     {
       id: 4,
-      title: "Сводная аналитика",
+      title: "Xurshid Muminov",
       list: [
         "Более 20 показателей эффективности",
         "Групповые и индивидуальные отчеты",
@@ -190,7 +185,7 @@ const Advantages = {
         "Сбор оценок и отзывов по курсам",
         "Разработка новых отчетов на заказ",
       ],
-      img: Ulugbek,
+      img: Xurshid,
     },
     {
       id: 5,
@@ -260,13 +255,6 @@ function Home() {
     }, 5000);
     return () => clearInterval(interval);
   }, [active]);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
 
   return (
     <main className="home">
@@ -540,67 +528,6 @@ function Home() {
           <div className="connecting__button__cont">
             <button className="connecting__button__">Подключиться</button>
           </div>
-        </div>
-      </div>
-      <div className="mobile_app">
-        <div className="container_section_body">
-          <div className="left__col__">
-            <div className="container_section_title">
-              <h2>Знания всегда под рукой</h2>
-              <p>
-                Установите мобильное приложение на свой смартфон и обучайтесь в
-                удобное время из любой точки мира
-              </p>
-            </div>
-            <div className="container_section_contents">
-              <img src={Appstore} alt="" />
-              <img src={Googleplay} alt="" />
-              <img src={Huawei} alt="" />
-            </div>
-          </div>
-          <div className="right__col__">
-            <img src={MobileApp} alt="" />
-          </div>
-        </div>
-      </div>
-      <div className="contacts_section">
-        <div className="col__left__">
-          <div className="contacts_section_title__imgs">
-            <Konsult className="konsult__img__" />
-            <KonsultBg className="konsult__img__bg__" />
-          </div>
-        </div>
-        <div className="col__right_form">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form_title">
-              <h2>Запишитесь на презентацию</h2>
-              <p>
-                Проведем краткий обзор платформы, покажем как решить ваши задачи
-                и подскажем первые шаги для эффективного запуска
-              </p>
-            </div>
-            <div className="form_contents">
-              <div className="form_contents_item">
-                <input
-                  type="text"
-                  placeholder="Ваше имя"
-                  style={errors.name ? { border: "1px solid red" } : null}
-                  {...register("name", { required: true })}
-                />
-              </div>
-              <div className="form_contents_item">
-                <input
-                  type="tel"
-                  placeholder="Ваш телефон"
-                  style={errors.number ? { border: "1px solid red" } : null}
-                  {...register("number", { required: true })}
-                />
-              </div>
-              <div className="form_contents_item">
-                <button type="submit">Записаться сейчас</button>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </main>

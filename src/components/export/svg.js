@@ -21,10 +21,6 @@ import Problem from "../../assets/img/problem.png";
 import Holon from "../../assets/img/holoniq.png";
 import RVK from "../../assets/img/rvk.png";
 import mincomsv from "../../assets/img/mincomsv.png";
-import KonsText from "../../assets/img/kons-text.png";
-import KonsTel from "../../assets/img/kons-tel.png";
-import Kons from "../../assets/img/kons.png";
-import KonsWebp from "../../assets/img/kons.webp";
 import ProblemTwo from "../../assets/img/problem2.png";
 import ProblemThree from "../../assets/img/problem3.png";
 import ProblemFour from "../../assets/img/problem4.png";
@@ -33,13 +29,13 @@ import ProblemSix from "../../assets/img/problem6.png";
 import StartPack from "../../assets/img/startpack.png";
 import AdvanOne from "../../assets/img/slider-advan1.png";
 import AdvanSecond from "../../assets/img/slider-advan2.png";
-import AdvanThird from "../../assets/img/slider-advan3.png";
 import AdvanFourth from "../../assets/img/slider-advan4.png";
 import Farhod from "../../assets/img/team/farhod.png";
 import Anvarjon from "../../assets/img/team/anvarjon.png";
 import Ulugbek from "../../assets/img/team/ulugbek.png";
 import Farrux from "../../assets/img/team/farrux.jpg";
 import Muhriddin from "../../assets/img/team/muhriddin.png";
+import Xurshid from "../../assets/img/team/xurshid.png";
 import Noutbook from "../../assets/img/noutbook.webp";
 import Cup from "../../assets/img/cup.webp";
 import Appstore from "../../assets/img/appstore.svg";
@@ -160,7 +156,7 @@ export const ImgHome = [
   Muhriddin,
   Anvarjon,
   Ulugbek,
-  AdvanFourth,
+  Xurshid,
   AdvanSecond,
   AdvanOne,
   ProblemSix,
@@ -197,17 +193,4 @@ export const ImgHome = [
   Huawei,
   MobileApp,
 ];
-export const Konsult = ({ className = "img" }) => {
-  return (
-    <div className={"konsult__bloc_img_"}>
-      <img src={KonsText} alt="" />
-      <img src={KonsTel} alt="" />
-      <img className={className} src={Kons} alt="" />
-    </div>
-  );
-};
-export const KonsultBg = ({ className = "img" }) => {
-  return <img src={KonsWebp} alt="" className={className} />;
-};
 
-//KonsWebp
