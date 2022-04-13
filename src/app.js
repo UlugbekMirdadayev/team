@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import { LoginAuntification } from "./adminComponent/login";
 import "./assets/style/main.scss";
 import Home from "./components/home";
-import Rate from "./components/rate/index";
+import Rate from "./components/rate";
 
 function App() {
   return (
