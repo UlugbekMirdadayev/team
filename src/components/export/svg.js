@@ -29,7 +29,6 @@ import ProblemSix from "../../assets/img/problem6.png";
 import StartPack from "../../assets/img/startpack.png";
 import AdvanOne from "../../assets/img/slider-advan1.png";
 import AdvanSecond from "../../assets/img/slider-advan2.png";
-import AdvanFourth from "../../assets/img/slider-advan4.png";
 import Farhod from "../../assets/img/team/farhod.png";
 import Anvarjon from "../../assets/img/team/anvarjon.png";
 import Ulugbek from "../../assets/img/team/ulugbek.png";
