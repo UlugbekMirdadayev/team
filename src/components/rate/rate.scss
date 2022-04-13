@@ -1,0 +1,247 @@
+.rate_container {
+  width: 100%;
+  background-attachment: initial;
+  background-image: linear-gradient(
+    to bottom,
+    HSLA(0, 0%, 50%, 0.2),
+    HSLA(0, 0%, 50%, 0) 20rem
+  );
+  padding-top: 4rem;
+  .rate {
+    max-width: 1200px;
+    margin: 0 auto;
+    > h1 {
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      line-height: 1.1;
+      margin-bottom: 25px;
+    }
+    > p {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .tariff_blocks_period {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      > p {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .tariff_blocks_period_switch {
+        width: 68px;
+        height: 36px;
+        background: #fff;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+        margin-right: 20px;
+        .switch {
+          position: absolute;
+          width: 35px;
+          border-radius: 50%;
+          height: calc(100% - 4px);
+          left: 2px;
+          top: 2px;
+          background: #2f79b4;
+        }
+      }
+      .tariff_blocks_period_year {
+        display: flex;
+        align-items: center;
+        > p {
+          font-weight: bold;
+          margin-right: 15px;
+        }
+        .tariff_img {
+          margin-right: 10px;
+          svg {
+            width: 32px;
+            height: 40px;
+          }
+        }
+
+        .tariff_title_flex {
+          p {
+            font-weight: bold;
+            font-size: 12px;
+            &:nth-child(1) {
+              color: #e1103a;
+            }
+            &:nth-child(2) {
+              color: #ff0033;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .tariff_block_item {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      gap: 20px;
+      .tariff_block_card {
+        transition: 0.3s ease;
+        text-align: center;
+        width: 318px;
+        background: #fff;
+        border-radius: 30px;
+        padding: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.1);
+        .tariff_block_card_radio {
+          &.first {
+            display: none;
+            &:checked {
+              ~ .tariff_card_number {
+                button {
+                  &:nth-child(1) label {
+                    background: #fff;
+                    border: 1px solid #2f79b4;
+                  }
+                }
+              }
+              ~ .tariff_card_price {
+                h1:nth-child(1) {
+                  p {
+                    display: block;
+                  }
+                }
+                .user__price__months {
+                  p:nth-child(1) {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+          &.second {
+            display: none;
+            &:checked {
+              ~ .tariff_card_number {
+                button {
+                  &:nth-child(2) label {
+                    background: #fff;
+                    border: 1px solid #2f79b4;
+                  }
+                }
+              }
+              ~ .tariff_card_price {
+                h1:nth-child(2) {
+                  p {
+                    display: block;
+                  }
+                }
+                .user__price__months {
+                  p:nth-child(2) {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0 7px 40px -20px #6aade3;
+        }
+        > h1 {
+          margin: 20px 0 40px 0;
+          font-weight: 400;
+        }
+        > p {
+          margin-bottom: 10px;
+          color: #8c8c8c;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+          padding-bottom: 15px;
+          font-size: 0.85em;
+        }
+        .tariff_card_number {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          position: relative;
+          top: -15px;
+
+          button {
+            background: transparent;
+            position: relative;
+            border: none;
+            margin: 0 10px;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+            label {
+              cursor: pointer;
+              border-radius: 4px;
+              display: inline-flex;
+              padding: 10px;
+              border: 1px solid transparent;
+            }
+          }
+        }
+        .tariff_card_price {
+          > h1 {
+            font-weight: 400;
+            p {
+              display: none;
+            }
+            input {
+              display: none;
+
+              &:checked ~ p {
+                display: block;
+              }
+            }
+          }
+          > h2 {
+            font-weight: 400;
+            margin-bottom: 20px;
+          }
+          > .user__price__months p {
+            font-size: 13px;
+            margin-bottom: 20px;
+            display: none;
+          }
+          button {
+            border: 1px solid #67abe2;
+            padding: 10px;
+            font-weight: 700;
+            width: 80%;
+            color: #fff;
+            background-color: #67abe2;
+            border-radius: 100px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+          }
+          a {
+            color: #8c8c8c;
+            justify-content: center;
+            display: flex;
+            font-size: 13px;
+            border-bottom: 1px dashed currentColor;
+            width: max-content;
+            margin: 0 auto;
+            margin-bottom: 20px;
+          }
+          p {
+            &:nth-child(6) {
+              font-size: 10px;
+              margin-bottom: 20px;
+              border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+              padding-bottom: 10px;
+            }
+          }
+        }
+        .tariff_card_price_bottom {
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
