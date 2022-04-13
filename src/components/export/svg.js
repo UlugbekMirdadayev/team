@@ -40,6 +40,22 @@ import Cup from "../../assets/img/cup.webp";
 import Appstore from "../../assets/img/appstore.svg";
 import Googleplay from "../../assets/img/googleplay.svg";
 import Huawei from "../../assets/img/huawei.svg";
+import Chint from "../../assets/img/portfolio/Chint.png";
+import Newly from "../../assets/img/portfolio/Newly.png";
+import Bukhara from "../../assets/img/portfolio/Bukhara.png";
+import Nura from "../../assets/img/portfolio/Nura.png";
+import Steam from "../../assets/img/portfolio/Steam.png";
+import Therepublick from "../../assets/img/portfolio/Therepublick.png";
+
+export const Portfolio = [
+  Chint,
+  Newly,
+  Bukhara,
+  Nura,
+  Therepublick,
+  Steam,
+];
+
 export const PresentBox = () => {
   return (
     <svg
@@ -192,4 +208,10 @@ export const ImgHome = [
   Huawei,
   MobileApp,
 ];
-
+export const Close = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+    </svg>
+  );
+};

@@ -72,13 +72,12 @@ function Header() {
   const { hash, pathname } = useLocation();
   const [lang, setLang] = React.useState("ru");
 
-
   return (
     <div className="header-container">
       <div className="w100">
         <header className="header">
           <NavLink to={"/"} className="header__logo">
-            <Logo /> <span> Unicraft — платформа для онлайн обучения </span>
+            <Logo />
           </NavLink>
           <ul>
             {linkData.map((item, index) => {
@@ -93,7 +92,9 @@ function Header() {
                         return (
                           <NavLink
                             style={
-                              pathname + hash === item?.link ? { color: "red" } : {}
+                              pathname + hash === item?.link
+                                ? { color: "red" }
+                                : {}
                             }
                             key={index}
                             to={item.link}

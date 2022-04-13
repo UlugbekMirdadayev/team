@@ -530,33 +530,15 @@ main.home {
               }
             }
             .card__img_right {
-              .img__block__user {
-                position: relative;
-                width: 30rem;
-                height: 30rem;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-                background: #281c6b;
-                position: absolute;
-                -webkit-transform: translateX(-50%, -50%);
-                -ms-transform: translateX(-50%, -50%);
-                transform: translateX(-50%, -50%);
-                -moz-transform: translateX(-50%, -50%);
-                -o-transform: translateX(-50%, -50%);
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                flex-direction: column;
-                img {
-                  object-fit: contain;
-                  object-position: bottom;
-                  position: relative;
-                  width: 100%;
-                  height: calc(100% + 2rem);
-                }
+              width: 50%;
+              img {
+                display: block;
+                margin: 0 auto;
+                width: 60%;
+                height: 60%;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 10px;
               }
             }
           }
