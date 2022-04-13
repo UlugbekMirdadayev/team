@@ -5,11 +5,11 @@ import "./home.scss";
 import { ArrowSlide, ImgHome, Konsult, KonsultBg } from "../export/svg";
 const [
   Noutbook,
-  AdvanEighth,
-  AdvanSeventh,
-  AdvanSixth,
-  AdvanFifth,
-  AdvanThird,
+  Farhod,
+  Farrux,
+  Muhriddin,
+  Anvarjon,
+  Ulugbek,
   AdvanFourth,
   AdvanSecond,
   AdvanOne,
@@ -136,11 +136,11 @@ const Advantages = {
     { name: "Загрузка материалов", id: 1 },
     { name: "Конструктор упражнений", id: 2 },
     { name: "Управление обучением", id: 3 },
-    { name: "Сводная аналитика", id: 4 },
-    { name: "HR функции", id: 5 },
-    { name: "Визуальные", id: 6 },
-    { name: "Технологические", id: 7 },
-    { name: "Сопровождение", id: 8 },
+    { name: "Ulug'bek Mirdadayev", id: 4 },
+    { name: "Anvarjon Hujamov", id: 5 },
+    { name: "Muhriddin Saidaliyev", id: 6 },
+    { name: "Farrux Turg'unpolatov", id: 7 },
+    { name: "Farhod Nomonov", id: 8 },
   ],
   card: [
     {
@@ -170,7 +170,7 @@ const Advantages = {
     },
     {
       id: 3,
-      title: "Управление обучением",
+      title: "Ulug'bek Mirdadayev",
       list: [
         "Объединение курсов в программы и каталоги",
         "Распределение пользователей по группам",
@@ -178,7 +178,7 @@ const Advantages = {
         "Интеграция с вебинарными сервисами",
         "Готовые курсы от внешних провайдеров",
       ],
-      img: AdvanThird,
+      img: Ulugbek,
     },
     {
       id: 4,
@@ -190,11 +190,11 @@ const Advantages = {
         "Сбор оценок и отзывов по курсам",
         "Разработка новых отчетов на заказ",
       ],
-      img: AdvanFourth,
+      img: Ulugbek,
     },
     {
       id: 5,
-      title: "HR функции",
+      title: "Anvarjon Hujamov",
       list: [
         "Автоматическое назначение по должности",
         "Отдельный кабинет для руководителей",
@@ -202,11 +202,11 @@ const Advantages = {
         "Управление дедлайнами и сроками доступа",
         "Синхронизация с кадровыми системами",
       ],
-      img: AdvanFifth,
+      img: Anvarjon,
     },
     {
       id: 6,
-      title: "Визуальные",
+      title: "Muhriddin Saidaliyev",
       list: [
         "Привлекательный удобный интерфейс",
         "Разнообразные инструменты геймификации",
@@ -214,11 +214,11 @@ const Advantages = {
         "Сертификаты по индивидуальному образцу",
         "White-label мобильное приложение",
       ],
-      img: AdvanSixth,
+      img: Muhriddin,
     },
     {
       id: 7,
-      title: "Технологические",
+      title: "Farrux Turg'unpolatov",
       list: [
         "Современный стек технологий",
         "Коробочная или облачная версия",
@@ -226,11 +226,11 @@ const Advantages = {
         "Разработка новых функций по запросу",
         "Открытое API для интеграций",
       ],
-      img: AdvanSeventh,
+      img: Farrux,
     },
     {
       id: 8,
-      title: "Сопровождение",
+      title: "Farhod Nomonov",
       list: [
         "Оперативная заботливая поддержка",
         "Аудит текущей системы обучения",
@@ -238,7 +238,7 @@ const Advantages = {
         "Заказная разработка курсов и тестов",
         "Перенос обучения с другой платформы",
       ],
-      img: AdvanEighth,
+      img: Farhod,
     },
   ],
 };
@@ -436,7 +436,9 @@ function Home() {
                               </button>
                             </div>
                             <div className="card__img_right">
-                              <img src={__it?.img} alt="" />
+                              <div className="img__block__user">
+                                <img src={__it?.img} alt="" />
+                              </div>
                             </div>
                           </div>
                         );

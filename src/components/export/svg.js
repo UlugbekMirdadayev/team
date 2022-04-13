@@ -35,10 +35,11 @@ import AdvanOne from "../../assets/img/slider-advan1.png";
 import AdvanSecond from "../../assets/img/slider-advan2.png";
 import AdvanThird from "../../assets/img/slider-advan3.png";
 import AdvanFourth from "../../assets/img/slider-advan4.png";
-import AdvanFifth from "../../assets/img/slider-advan5.png";
-import AdvanSixth from "../../assets/img/slider-advan6.png";
-import AdvanSeventh from "../../assets/img/slider-advan7.png";
-import AdvanEighth from "../../assets/img/slider-advan8.png";
+import Farhod from "../../assets/img/team/farhod.png";
+import Anvarjon from "../../assets/img/team/anvarjon.png";
+import Ulugbek from "../../assets/img/team/ulugbek.png";
+import Farrux from "../../assets/img/team/farrux.jpg";
+import Muhriddin from "../../assets/img/team/muhriddin.png";
 import Noutbook from "../../assets/img/noutbook.webp";
 import Cup from "../../assets/img/cup.webp";
 import Appstore from "../../assets/img/appstore.svg";
@@ -154,11 +155,11 @@ export const ArrowSlide = ({ className = "icon" }) => {
 
 export const ImgHome = [
   Noutbook,
-  AdvanEighth,
-  AdvanSeventh,
-  AdvanSixth,
-  AdvanFifth,
-  AdvanThird,
+  Farhod,
+  Farrux,
+  Muhriddin,
+  Anvarjon,
+  Ulugbek,
   AdvanFourth,
   AdvanSecond,
   AdvanOne,
