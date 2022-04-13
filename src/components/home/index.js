@@ -2,6 +2,35 @@ import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import "./home.scss";
 import { ArrowSlide, ImgHome } from "../export/svg";
+const array = [
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/98b6887c25e9259ec9d401d7779105c8/fill_webp-540-320.webp",
+    cardTitleIs: "Фронтенд-разработчик",
+    cardPIs: "Разработка фронтенд-компонентов веб-приложений",
+  },
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/744c1029699b21cc531bb3eb621b5e52/fill_webp-540-320.webp",
+
+    cardTitleIs: "Python-разработчик",
+    cardPIs: "Разработка веб-приложений на Django",
+  },
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/48ba16d5318ab0c5585c785b0f513139/fill_webp-540-320.webp",
+    cardTitleIs: "PHP-разработчик",
+    cardPIs: "Разработка веб-приложений на Laravel",
+  },
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/5033764023c5f12fd1a911632cacd951/fill_webp-540-320.webp",
+ 
+      cardTitleIs: "Node.js-разработчик",
+      cardPIs: "Разработка бэкенд-компонентов веб-приложений",
+    },
+];
+
 const [
   Noutbook,
   Farhod,
@@ -444,6 +473,60 @@ function Home() {
               );
             })}
           </div>
+        </div>
+      </div>
+
+      <div className="container_section_row">
+        <div class="row row-cols-1 row-cols-md-2">
+          {array?.map((item, index) => {
+            return (
+              <div key={index} class="col mb-4">
+                <div class="card shadow-sm x-shadow-fade-in h-100">
+                  <div class="row h-100 g-0 flex_row">
+                    <div class="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
+                      <img
+                        className="Card_img_is"
+                        src={item.cardImgIs}
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="card-body d-flex flex-column h-100 ps-lg-2">
+                        <div class="d-flex">
+                          <div class="badge bg-light text-dark me-2">
+                            Профессия
+                          </div>
+                        </div>
+                        <div class="h4 mt-2">
+                          <a
+                            class="stretched-link text-decoration-none link-dark"
+                            target="_blank"
+                            rel="noopener"
+                            href="/programs/frontend"
+                          >
+                           {item.cardTitleIs}
+                          </a>
+                        </div>
+                        <div class="small text-muted mb-3">
+                         {item.cardPIs}
+                        </div>
+                        <div class="mt-auto text-muted">
+                          <span class="me-2 text-nowrap">
+                            <span class="fal fa-calendar-alt fa-fw me-1"></span>
+                            13 апреля
+                          </span>
+                          <span class="text-nowrap">
+                            <span class="far fa-clock fa-fw me-1"></span>
+                            10 месяцев
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="container_section_row">
