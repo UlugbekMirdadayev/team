@@ -83,7 +83,7 @@ function Footer() {
       <div className="footer">
         <div className="has-text-centered">
           <p>Есть вопросы? Звоните!</p>
-          <a href="tel:+7 (495) 532-69-02">+7 (495) 532-69-02</a>
+          <a href="tel:+998 90 754-21-98">+998 90 990 99 90</a>
         </div>
         <div className="partners-footer">
           <div className="partners-footer__item">
