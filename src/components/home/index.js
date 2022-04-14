@@ -1,22 +1,48 @@
 import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import "./home.scss";
+<<<<<<< HEAD
 import { ArrowSlide, ImgHome } from "../export/svg";
+const array = [
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/98b6887c25e9259ec9d401d7779105c8/fill_webp-540-320.webp",
+    cardTitleIs: "Фронтенд-разработчик",
+    cardPIs: "Разработка фронтенд-компонентов веб-приложений",
+  },
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/744c1029699b21cc531bb3eb621b5e52/fill_webp-540-320.webp",
+
+    cardTitleIs: "Python-разработчик",
+    cardPIs: "Разработка веб-приложений на Django",
+  },
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/48ba16d5318ab0c5585c785b0f513139/fill_webp-540-320.webp",
+    cardTitleIs: "PHP-разработчик",
+    cardPIs: "Разработка веб-приложений на Laravel",
+  },
+  {
+    cardImgIs:
+      "https://cdn2.hexlet.io/store/derivatives/5033764023c5f12fd1a911632cacd951/fill_webp-540-320.webp",
+ 
+      cardTitleIs: "Node.js-разработчик",
+      cardPIs: "Разработка бэкенд-компонентов веб-приложений",
+    },
+];
+=======
+import { ArrowSlide, ImgHome, Portfolio } from "../export/svg";
+import { RegisterModal } from "./../export/modal";
+>>>>>>> 1322fdcda37a85e382a2552e892b920011187641
+
 const [
   Noutbook,
   Farhod,
   Farrux,
-  Muhriddin,
-  Anvarjon,
-  Ulugbek,
-  Xurshid,
-  AdvanSecond,
-  AdvanOne,
   ProblemSix,
   ProblemFive,
   ProblemFour,
-  ProblemThree,
-  ProblemTwo,
   Problem,
   TiltImgAfterhree,
   TiltImghree,
@@ -42,6 +68,7 @@ const [
   RVK,
   mincomsv,
 ] = ImgHome;
+
 const Liders = [
   {
     img: Sber,
@@ -96,39 +123,35 @@ const Liders = [
 const AnyProblems = [
   {
     img: Problem,
-    title: "Онлайн-обучение для клиентов",
-    text: "Зарабатывайте на предоставлении доступа к курсам",
-  },
-  {
-    img: ProblemTwo,
-    title: "Потоковая адаптация персонала",
-    text: "Быстро вводите в должность новых сотрудников",
-  },
-  {
-    img: ProblemThree,
-    title: "Обучение ассортименту и продажам",
-    text: "Оперативно сообщайте о новинках и увеличивайте доход",
+    title: "Frontend Development",
+    text: "От нуля до Junior",
   },
   {
     img: ProblemFour,
-    title: "Систематизация и масштабирование",
-    text: "Расширяйте бизнес и занимайте новые территории",
+    title: "Backend Development",
+    text: "От нуля до Junior ",
+  },
+  {
+    img: ProblemFour,
+    title: "Android App Development",
+  },
+  {
+    img: ProblemFour,
+    title: "Python development",
   },
   {
     img: ProblemFive,
-    title: "Регулярная аттестация сотрудников",
-    text: "Проверяйте знания для соблюдения единых стандартов",
+    title: "Flutter App Development",
   },
   {
     img: ProblemSix,
-    title: "Полная автоматизация HR процессов",
-    text: "Решайте все кадровые задачи в одной системе",
+    title: "Java Development",
   },
 ];
-
+const [Chint, Newly, Bukhara, Nura, Therepublick, Steam] = Portfolio;
 const Advantages = {
   pagination: [
-    { name: "Загрузка материалов", id: 1 },
+    { name: "Chint", id: 1 },
     { name: "Конструктор упражнений", id: 2 },
     { name: "Ulug'bek Mirdadayev", id: 3 },
     { name: "Xurshid Muminov ", id: 4 },
@@ -149,7 +172,7 @@ const Advantages = {
         "Защита контента от копирования и скачивания",
         "Интерактивные курсы в формате SCORM",
       ],
-      img: AdvanOne,
+      img: Chint,
     },
     {
       id: 2,
@@ -161,7 +184,7 @@ const Advantages = {
         "Случайная выборка из готового банка",
         "Таймер и управление попытками сдачи",
       ],
-      img: AdvanSecond,
+      img: Newly,
     },
     {
       id: 3,
@@ -173,7 +196,7 @@ const Advantages = {
         "Интеграция с вебинарными сервисами",
         "Готовые курсы от внешних провайдеров",
       ],
-      img: Ulugbek,
+      img: Bukhara,
     },
     {
       id: 4,
@@ -185,7 +208,7 @@ const Advantages = {
         "Сбор оценок и отзывов по курсам",
         "Разработка новых отчетов на заказ",
       ],
-      img: Xurshid,
+      img: Nura,
     },
     {
       id: 5,
@@ -197,7 +220,7 @@ const Advantages = {
         "Управление дедлайнами и сроками доступа",
         "Синхронизация с кадровыми системами",
       ],
-      img: Anvarjon,
+      img: Therepublick,
     },
     {
       id: 6,
@@ -209,7 +232,7 @@ const Advantages = {
         "Сертификаты по индивидуальному образцу",
         "White-label мобильное приложение",
       ],
-      img: Muhriddin,
+      img: Steam,
     },
     {
       id: 7,
@@ -238,6 +261,7 @@ const Advantages = {
   ],
 };
 function Home() {
+  const [openModal, setOpenModal] = React.useState(false);
   const [active, setActive] = React.useState(1);
   const options = {
     scale: 1,
@@ -258,6 +282,7 @@ function Home() {
 
   return (
     <main className="home">
+      {openModal && <RegisterModal open={openModal} setOpen={setOpenModal} />}
       <div className="video-bg-intro">
         <div className="video-overlay" />
         <video
@@ -349,8 +374,14 @@ function Home() {
                   <img src={__res?.img} alt="" />
                 </div>
                 <div className="__card_title">{__res?.title}</div>
-                <div className="__card_text">{__res?.text}</div>
-                <button>Подробнее</button>
+                <div className="__card_text">От нуля до Junior</div>
+                <button
+                  onClick={() => {
+                    setOpenModal(true);
+                  }}
+                >
+                  Подробнее
+                </button>
               </div>
             );
           })}
@@ -424,9 +455,7 @@ function Home() {
                               </button>
                             </div>
                             <div className="card__img_right">
-                              <div className="img__block__user">
-                                <img src={__it?.img} alt="" />
-                              </div>
+                              <img src={__it?.img} alt="" />
                             </div>
                           </div>
                         );
@@ -444,6 +473,60 @@ function Home() {
               );
             })}
           </div>
+        </div>
+      </div>
+
+      <div className="container_section_row">
+        <div class="row row-cols-1 row-cols-md-2">
+          {array?.map((item, index) => {
+            return (
+              <div key={index} class="col mb-4">
+                <div class="card shadow-sm x-shadow-fade-in h-100">
+                  <div class="row h-100 g-0 flex_row">
+                    <div class="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
+                      <img
+                        className="Card_img_is"
+                        src={item.cardImgIs}
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="card-body d-flex flex-column h-100 ps-lg-2">
+                        <div class="d-flex">
+                          <div class="badge bg-light text-dark me-2">
+                            Профессия
+                          </div>
+                        </div>
+                        <div class="h4 mt-2">
+                          <a
+                            class="stretched-link text-decoration-none link-dark"
+                            target="_blank"
+                            rel="noopener"
+                            href="/programs/frontend"
+                          >
+                           {item.cardTitleIs}
+                          </a>
+                        </div>
+                        <div class="small text-muted mb-3">
+                         {item.cardPIs}
+                        </div>
+                        <div class="mt-auto text-muted">
+                          <span class="me-2 text-nowrap">
+                            <span class="fal fa-calendar-alt fa-fw me-1"></span>
+                            13 апреля
+                          </span>
+                          <span class="text-nowrap">
+                            <span class="far fa-clock fa-fw me-1"></span>
+                            10 месяцев
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="container_section_row">
