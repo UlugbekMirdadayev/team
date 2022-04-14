@@ -1,8 +1,8 @@
 import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import "./home.scss";
-<<<<<<< HEAD
-import { ArrowSlide, ImgHome } from "../export/svg";
+import { ArrowSlide, ImgHome, Portfolio } from "../export/svg";
+import { RegisterModal } from "./../export/modal";
 const array = [
   {
     cardImgIs:
@@ -26,15 +26,11 @@ const array = [
   {
     cardImgIs:
       "https://cdn2.hexlet.io/store/derivatives/5033764023c5f12fd1a911632cacd951/fill_webp-540-320.webp",
- 
-      cardTitleIs: "Node.js-разработчик",
-      cardPIs: "Разработка бэкенд-компонентов веб-приложений",
-    },
+
+    cardTitleIs: "Node.js-разработчик",
+    cardPIs: "Разработка бэкенд-компонентов веб-приложений",
+  },
 ];
-=======
-import { ArrowSlide, ImgHome, Portfolio } from "../export/svg";
-import { RegisterModal } from "./../export/modal";
->>>>>>> 1322fdcda37a85e382a2552e892b920011187641
 
 const [
   Noutbook,
@@ -504,12 +500,10 @@ function Home() {
                             rel="noopener"
                             href="/programs/frontend"
                           >
-                           {item.cardTitleIs}
+                            {item.cardTitleIs}
                           </a>
                         </div>
-                        <div class="small text-muted mb-3">
-                         {item.cardPIs}
-                        </div>
+                        <div class="small text-muted mb-3">{item.cardPIs}</div>
                         <div class="mt-auto text-muted">
                           <span class="me-2 text-nowrap">
                             <span class="fal fa-calendar-alt fa-fw me-1"></span>
