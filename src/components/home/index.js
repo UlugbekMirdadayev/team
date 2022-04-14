@@ -119,7 +119,7 @@ const AnyProblems = [
 const [Chint, Newly, Bukhara, Nura, Therepublick, Steam] = Portfolio;
 const Advantages = {
   pagination: [
-    { name: "Загрузка материалов", id: 1 },
+    { name: "Chint", id: 1 },
     { name: "Конструктор упражнений", id: 2 },
     { name: "Ulug'bek Mirdadayev", id: 3 },
     { name: "Xurshid Muminov ", id: 4 },
