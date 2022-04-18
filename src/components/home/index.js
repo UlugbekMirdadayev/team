@@ -3,6 +3,7 @@ import VanillaTilt from "vanilla-tilt";
 import "./home.scss";
 import { ImgHome } from "../export/svg";
 import { RegisterModal } from "./../export/modal";
+import TeamSlide from "../teamSlide";
 const array = [
   {
     cardImgIs:
@@ -224,152 +225,155 @@ function Home() {
   }, [active]);
 
   return (
-    <main className="home">
-      {openModal && <RegisterModal open={openModal} setOpen={setOpenModal} />}
-      <div className="video-bg-intro">
-        <div className="video-overlay" />
-        <video
-          lazy="lazy"
-          preload="none"
-          autoPlay
-          loop
-          muted
-          pip="false"
-          playsInline
-          poster="https://i.vimeocdn.com/video/1072231461-bac8c4cdbb9ec924a3b785c5aa318d7b1c59479b74711d5331d7b4fd9f367e52-d?mw=1300&mh=731&q=70"
-          id="headerVideo"
-        >
-          <source
-            data-src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
-            type="video/mp4"
-            src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
-          />
-        </video>
-        <div className="home-content">
-          <div className="home-content-text">
-            <h1>Платформа для онлайн обучения</h1>
-            <p>
-              Запусти обучение сотрудников сейчас, следуя простым инструкциям
-            </p>
+    <>
+      <main className="home">
+        {openModal && <RegisterModal open={openModal} setOpen={setOpenModal} />}
+        <div className="video-bg-intro">
+          <div className="video-overlay" />
+          <video
+            lazy="lazy"
+            preload="none"
+            autoPlay
+            loop
+            muted
+            pip="false"
+            playsInline
+            poster="https://i.vimeocdn.com/video/1072231461-bac8c4cdbb9ec924a3b785c5aa318d7b1c59479b74711d5331d7b4fd9f367e52-d?mw=1300&mh=731&q=70"
+            id="headerVideo"
+          >
+            <source
+              data-src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
+              type="video/mp4"
+              src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
+            />
+          </video>
+          <div className="home-content">
+            <div className="home-content-text">
+              <h1>Платформа для онлайн обучения</h1>
+              <p>
+                Запусти обучение сотрудников сейчас, следуя простым инструкциям
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="leaders-section">
-        <div className="leaders-section-title">
-          <h2>Unicraft доверяют лидеры</h2>
-        </div>
-        <div className="leaders-section-content">
-          {Liders.map((__res) => {
-            return (
-              <div
-                key={__res?.name + 1}
-                className="leaders-section-content-item"
-              >
-                <div className="leaders-section-content-item-img">
-                  <img src={__res?.img} alt={__res?.name} />
+        <div className="leaders-section">
+          <div className="leaders-section-title">
+            <h2>Unicraft доверяют лидеры</h2>
+          </div>
+          <div className="leaders-section-content">
+            {Liders.map((__res) => {
+              return (
+                <div
+                  key={__res?.name + 1}
+                  className="leaders-section-content-item"
+                >
+                  <div className="leaders-section-content-item-img">
+                    <img src={__res?.img} alt={__res?.name} />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div className="container_section_intuitive">
-        <div className="container_section_intuitive_title">
-          <h2>Интуитивное управление</h2>
-        </div>
-        <div className="container_section_intuitive_content">
-          <Tilt
-            img={TiltImg}
-            imgAfter={TiltImgAfter}
-            index={1}
-            options={options}
-            title="Загрузи материалы"
-            text="Работай с привычными форматами прямо на платформе"
-          />
-          <Tilt
-            img={TiltImgTwo}
-            imgAfter={TiltImgAfterTwo}
-            index={2}
-            options={options}
-            title="Назначь обучение"
-            text="Импортируй пользователей из других систем автоматически"
-          />
-          <Tilt
-            img={TiltImghree}
-            imgAfter={TiltImgAfterhree}
-            index={3}
-            options={options}
-            title="Получи результат"
-            text="Преврати новичка в компетентного специалиста за несколько дней"
-          />
-        </div>
-      </div>
-      <div className="container_section">
-        <div className="container_section_body">
-          <div className="container_section_title">
-            <h2>Преимущества платформы</h2>
-            <p className="hugetext">
-              Все, что нужно для полноценного управления обучением, мы уместили
-              в удобные и эргономичные интерфейсы
-            </p>
+              );
+            })}
           </div>
         </div>
-      </div>
+        <div className="container_section_intuitive">
+          <div className="container_section_intuitive_title">
+            <h2>Интуитивное управление</h2>
+          </div>
+          <div className="container_section_intuitive_content">
+            <Tilt
+              img={TiltImg}
+              imgAfter={TiltImgAfter}
+              index={1}
+              options={options}
+              title="Загрузи материалы"
+              text="Работай с привычными форматами прямо на платформе"
+            />
+            <Tilt
+              img={TiltImgTwo}
+              imgAfter={TiltImgAfterTwo}
+              index={2}
+              options={options}
+              title="Назначь обучение"
+              text="Импортируй пользователей из других систем автоматически"
+            />
+            <Tilt
+              img={TiltImghree}
+              imgAfter={TiltImgAfterhree}
+              index={3}
+              options={options}
+              title="Получи результат"
+              text="Преврати новичка в компетентного специалиста за несколько дней"
+            />
+          </div>
+        </div>
+        <div className="container_section">
+          <div className="container_section_body">
+            <div className="container_section_title">
+              <h2>Преимущества платформы</h2>
+              <p className="hugetext">
+                Все, что нужно для полноценного управления обучением, мы
+                уместили в удобные и эргономичные интерфейсы
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div className="container_section_row">
-        <div className="row row-cols-1 row-cols-md-2">
-          {array?.map((item, index) => {
-            return (
-              <div key={index} className="col mb-4">
-                <div className="card shadow-sm x-shadow-fade-in h-100">
-                  <div className="row h-100 g-0 flex_row">
-                    <div className="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
-                      <img
-                        className="Card_img_is"
-                        src={item.cardImgIs}
-                        alt=""
-                      />
-                    </div>
-                    <div className="col">
-                      <div className="card-body d-flex flex-column h-100 ps-lg-2">
-                        <div className="d-flex">
-                          <div className="badge bg-light text-dark me-2">
-                            Профессия
+        <div className="container_section_row">
+          <div className="row row-cols-1 row-cols-md-2">
+            {array?.map((item, index) => {
+              return (
+                <div key={index} className="col mb-4">
+                  <div className="card shadow-sm x-shadow-fade-in h-100">
+                    <div className="row h-100 g-0 flex_row">
+                      <div className="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
+                        <img
+                          className="Card_img_is"
+                          src={item.cardImgIs}
+                          alt=""
+                        />
+                      </div>
+                      <div className="col">
+                        <div className="card-body d-flex flex-column h-100 ps-lg-2">
+                          <div className="d-flex">
+                            <div className="badge bg-light text-dark me-2">
+                              Профессия
+                            </div>
                           </div>
-                        </div>
-                        <div className="h4 mt-2">
-                          <a
-                            className="stretched-link text-decoration-none link-dark"
-                            target="_blank"
-                            rel="noopener"
-                            href="/programs/frontend"
-                          >
-                            {item.cardTitleIs}
-                          </a>
-                        </div>
-                        <div className="small text-muted mb-3">
-                          {item.cardPIs}
-                        </div>
-                        <div className="mt-auto text-muted">
-                          <span className="me-2 text-nowrap">
-                            <span className="fal fa-calendar-alt fa-fw me-1"></span>
-                            13 апреля
-                          </span>
-                          <span className="text-nowrap">
-                            <span className="far fa-clock fa-fw me-1"></span>
-                            10 месяцев
-                          </span>
+                          <div className="h4 mt-2">
+                            <a
+                              className="stretched-link text-decoration-none link-dark"
+                              target="_blank"
+                              rel="noopener"
+                              href="/programs/frontend"
+                            >
+                              {item.cardTitleIs}
+                            </a>
+                          </div>
+                          <div className="small text-muted mb-3">
+                            {item.cardPIs}
+                          </div>
+                          <div className="mt-auto text-muted">
+                            <span className="me-2 text-nowrap">
+                              <span className="fal fa-calendar-alt fa-fw me-1"></span>
+                              13 апреля
+                            </span>
+                            <span className="text-nowrap">
+                              <span className="far fa-clock fa-fw me-1"></span>
+                              10 месяцев
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <TeamSlide />
+    </>
   );
 }
 

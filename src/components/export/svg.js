@@ -4,7 +4,15 @@ import TiltImgTwo from "../../assets/img/tilttwo.webp";
 import TiltImgAfterTwo from "../../assets/img/tiltaftertwo.webp";
 import TiltImghree from "../../assets/img/tiltthree.webp";
 import TiltImgAfterhree from "../../assets/img/tiltafterthree.webp";
-
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3Full, DiReact } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
+export const ExportSvg = {
+  AiFillHtml5,
+  DiCss3Full,
+  IoLogoJavascript,
+  DiReact,
+};
 
 export const PresentBox = () => {
   return (
