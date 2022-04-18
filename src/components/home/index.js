@@ -44,8 +44,8 @@ const [
 
 const Liders = [
   {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Сбербанк",
+    img: "http://www.abbatech.com/wp-content/uploads/2018/01/logo-abba6.jpg",
+    name: "abba tech",
   },
   {
     img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
@@ -93,136 +93,13 @@ const Liders = [
   },
 ];
 
-const Advantages = {
-  pagination: [
-    { name: "Chint", id: 1 },
-    { name: "Конструктор упражнений", id: 2 },
-    { name: "Ulug'bek Mirdadayev", id: 3 },
-    { name: "Xurshid Muminov ", id: 4 },
-    { name: "Anvarjon Hujamov", id: 5 },
-    { name: "Muhriddin Saidaliyev", id: 6 },
-    { name: "Farrux Turg'unpolatov", id: 7 },
-    { name: "Farhod Nomonov", id: 8 },
-  ],
-  card: [
-    {
-      id: 1,
-
-      title: "Загрузка материалов",
-      list: [
-        "Полноценный встроенный редактор уроков",
-        "Поддержка всех популярных форматов файлов",
-        "Видеохостинги и конструкторы web-страниц",
-        "Защита контента от копирования и скачивания",
-        "Интерактивные курсы в формате SCORM",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 2,
-      title: "Конструктор упражнений",
-      list: [
-        "Широкий выбор видов тестирования",
-        "Практические задания с ручной проверкой",
-        "Продуманная система управления баллами",
-        "Случайная выборка из готового банка",
-        "Таймер и управление попытками сдачи",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 3,
-      title: "Ulug'bek Mirdadayev",
-      list: [
-        "Объединение курсов в программы и каталоги",
-        "Распределение пользователей по группам",
-        "Гибкое управление доступом и назначениями",
-        "Интеграция с вебинарными сервисами",
-        "Готовые курсы от внешних провайдеров",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 4,
-      title: "Xurshid Muminov",
-      list: [
-        "Более 20 показателей эффективности",
-        "Групповые и индивидуальные отчеты",
-        "Свободный импорт и экспорт данных",
-        "Сбор оценок и отзывов по курсам",
-        "Разработка новых отчетов на заказ",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 5,
-      title: "Anvarjon Hujamov",
-      list: [
-        "Автоматическое назначение по должности",
-        "Отдельный кабинет для руководителей",
-        "Аттестации с блокировкой доступа к теории",
-        "Управление дедлайнами и сроками доступа",
-        "Синхронизация с кадровыми системами",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 6,
-      title: "Muhriddin Saidaliyev",
-      list: [
-        "Привлекательный удобный интерфейс",
-        "Разнообразные инструменты геймификации",
-        "Персональное брендирование платформы",
-        "Сертификаты по индивидуальному образцу",
-        "White-label мобильное приложение",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 7,
-      title: "Farrux Turg'unpolatov",
-      list: [
-        "Современный стек технологий",
-        "Коробочная или облачная версия",
-        "Безлимитное хранилище данных",
-        "Разработка новых функций по запросу",
-        "Открытое API для интеграций",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-    {
-      id: 8,
-      title: "Farhod Nomonov",
-      list: [
-        "Оперативная заботливая поддержка",
-        "Аудит текущей системы обучения",
-        "Составление структуры материалов",
-        "Заказная разработка курсов и тестов",
-        "Перенос обучения с другой платформы",
-      ],
-      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    },
-  ],
-};
 function Home() {
   const [openModal, setOpenModal] = React.useState(false);
-  const [active, setActive] = React.useState(1);
   const options = {
     scale: 1,
     speed: 1000,
     max: 30,
   };
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      if (active !== Advantages?.pagination?.length) {
-        setActive(active + 1);
-      } else {
-        setActive(1);
-      }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [active]);
 
   return (
     <>
@@ -249,16 +126,14 @@ function Home() {
           </video>
           <div className="home-content">
             <div className="home-content-text">
-              <h1>Платформа для онлайн обучения</h1>
-              <p>
-                Запусти обучение сотрудников сейчас, следуя простым инструкциям
-              </p>
+              <h1>TechDataSoft IT компапия</h1>
+              <p>ПРОГРАММИРОВАНИЕ В УДОБНОЙ СРЕДЕ УЧИТЬСЯ</p>
             </div>
           </div>
         </div>
         <div className="leaders-section">
           <div className="leaders-section-title">
-            <h2>Unicraft доверяют лидеры</h2>
+            <h2>TechDataSoft доверяют лидеры</h2>
           </div>
           <div className="leaders-section-content">
             {Liders.map((__res) => {
@@ -285,16 +160,16 @@ function Home() {
               imgAfter={TiltImgAfter}
               index={1}
               options={options}
-              title="Загрузи материалы"
-              text="Работай с привычными форматами прямо на платформе"
+              title="Обучение качественно и быстро"
+              text="Учитесь со скоростью и в удобное для вас время. Это зависит от вас, чтобы добраться до финиша"
             />
             <Tilt
               img={TiltImgTwo}
               imgAfter={TiltImgAfterTwo}
               index={2}
               options={options}
-              title="Назначь обучение"
-              text="Импортируй пользователей из других систем автоматически"
+              title="Практика и обучение"
+              text="Практикуйтесь в удобное для вас время. Это зависит от вас, чтобы добраться до финиша"
             />
             <Tilt
               img={TiltImghree}
@@ -311,8 +186,8 @@ function Home() {
             <div className="container_section_title">
               <h2>Преимущества платформы</h2>
               <p className="hugetext">
-                Все, что нужно для полноценного управления обучением, мы
-                уместили в удобные и эргономичные интерфейсы
+                Вы получите полную консультацию по всем вопросам Выберите
+                подходящий вам курс и получите программу обучения в удобное
               </p>
             </div>
           </div>
