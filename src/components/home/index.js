@@ -240,9 +240,9 @@ function Home() {
           id="headerVideo"
         >
           <source
-            data-src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
+            // data-src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
             type="video/mp4"
-            src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
+            // src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
           />
         </video>
         <div className="home-content">
@@ -251,7 +251,6 @@ function Home() {
             <p>
               Запусти обучение сотрудников сейчас, следуя простым инструкциям
             </p>
-            <button>Попробовать бесплатно</button>
           </div>
         </div>
       </div>
