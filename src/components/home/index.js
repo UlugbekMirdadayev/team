@@ -236,13 +236,13 @@ function Home() {
           muted
           pip="false"
           playsInline
-          poster="https://cdn.dribbble.com/users/5000931/screenshots/17114110/dribbble_2.png?compress=1&resize=320x240&vertical=top"
+          poster="https://i.vimeocdn.com/video/1072231461-bac8c4cdbb9ec924a3b785c5aa318d7b1c59479b74711d5331d7b4fd9f367e52-d?mw=1300&mh=731&q=70"
           id="headerVideo"
         >
           <source
-            // data-src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
+            data-src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
             type="video/mp4"
-            // src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
+            src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
           />
         </video>
         <div className="home-content">
