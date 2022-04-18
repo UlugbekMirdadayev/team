@@ -4,14 +4,7 @@ import TiltImgTwo from "../../assets/img/tilttwo.webp";
 import TiltImgAfterTwo from "../../assets/img/tiltaftertwo.webp";
 import TiltImghree from "../../assets/img/tiltthree.webp";
 import TiltImgAfterhree from "../../assets/img/tiltafterthree.webp";
-import Chint from "../../assets/img/portfolio/Chint.png";
-import Newly from "../../assets/img/portfolio/Newly.png";
-import Bukhara from "../../assets/img/portfolio/Bukhara.png";
-import Nura from "../../assets/img/portfolio/Nura.png";
-import Steam from "../../assets/img/portfolio/Steam.png";
-import Therepublick from "../../assets/img/portfolio/Therepublick.png";
 
-export const Portfolio = [Chint, Newly, Bukhara, Nura, Therepublick, Steam];
 
 export const PresentBox = () => {
   return (
