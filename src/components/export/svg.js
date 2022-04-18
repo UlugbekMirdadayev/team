@@ -1,45 +1,9 @@
-import Sber from "../../assets/img/sber.webp";
-import Rostelecom from "../../assets/img/rostelecom.webp";
-import Mts from "../../assets/img/mts.webp";
-import Mailru from "../../assets/img/mailru.webp";
-import Ingos from "../../assets/img/ingos.webp";
-import SportMaster from "../../assets/img/sportmaster.webp";
-import Mondi from "../../assets/img/mondi.webp";
-import AptekaVita from "../../assets/img/aptekavita.webp";
-import Askona from "../../assets/img/askona.webp";
-import Ochakovo from "../../assets/img/ochakovo.webp";
-import Greenway from "../../assets/img/greenway.webp";
-import Msu from "../../assets/img/msu.webp";
 import TiltImg from "../../assets/img/tilt.webp";
 import TiltImgAfter from "../../assets/img/tiltafter.webp";
 import TiltImgTwo from "../../assets/img/tilttwo.webp";
 import TiltImgAfterTwo from "../../assets/img/tiltaftertwo.webp";
 import TiltImghree from "../../assets/img/tiltthree.webp";
 import TiltImgAfterhree from "../../assets/img/tiltafterthree.webp";
-import MobileApp from "../../assets/img/mobileapp.webp";
-import Problem from "../../assets/img/problem.png";
-import Holon from "../../assets/img/holoniq.png";
-import RVK from "../../assets/img/rvk.png";
-import mincomsv from "../../assets/img/mincomsv.png";
-import ProblemTwo from "../../assets/img/problem2.png";
-import ProblemThree from "../../assets/img/problem3.png";
-import ProblemFour from "../../assets/img/problem4.png";
-import ProblemFive from "../../assets/img/problem5.png";
-import ProblemSix from "../../assets/img/problem6.png";
-import StartPack from "../../assets/img/startpack.png";
-import AdvanOne from "../../assets/img/slider-advan1.png";
-import AdvanSecond from "../../assets/img/slider-advan2.png";
-import Farhod from "../../assets/img/team/farhod.png";
-import Anvarjon from "../../assets/img/team/anvarjon.png";
-import Ulugbek from "../../assets/img/team/ulugbek.png";
-import Farrux from "../../assets/img/team/farrux.jpg";
-import Muhriddin from "../../assets/img/team/muhriddin.png";
-import Xurshid from "../../assets/img/team/xurshid.png";
-import Noutbook from "../../assets/img/noutbook.webp";
-import Cup from "../../assets/img/cup.webp";
-import Appstore from "../../assets/img/appstore.svg";
-import Googleplay from "../../assets/img/googleplay.svg";
-import Huawei from "../../assets/img/huawei.svg";
 import Chint from "../../assets/img/portfolio/Chint.png";
 import Newly from "../../assets/img/portfolio/Newly.png";
 import Bukhara from "../../assets/img/portfolio/Bukhara.png";
@@ -47,14 +11,7 @@ import Nura from "../../assets/img/portfolio/Nura.png";
 import Steam from "../../assets/img/portfolio/Steam.png";
 import Therepublick from "../../assets/img/portfolio/Therepublick.png";
 
-export const Portfolio = [
-  Chint,
-  Newly,
-  Bukhara,
-  Nura,
-  Therepublick,
-  Steam,
-];
+export const Portfolio = [Chint, Newly, Bukhara, Nura, Therepublick, Steam];
 
 export const PresentBox = () => {
   return (
@@ -165,48 +122,12 @@ export const ArrowSlide = ({ className = "icon" }) => {
 };
 
 export const ImgHome = [
-  Noutbook,
-  Farhod,
-  Farrux,
-  Muhriddin,
-  Anvarjon,
-  Ulugbek,
-  Xurshid,
-  AdvanSecond,
-  AdvanOne,
-  ProblemSix,
-  ProblemFive,
-  ProblemFour,
-  ProblemThree,
-  ProblemTwo,
-  Problem,
   TiltImgAfterhree,
   TiltImghree,
   TiltImgAfterTwo,
-  Sber,
-  Rostelecom,
-  Mts,
-  Mailru,
-  Ingos,
-  SportMaster,
-  Mondi,
-  AptekaVita,
-  Askona,
-  Ochakovo,
-  Greenway,
-  Msu,
   TiltImg,
   TiltImgAfter,
   TiltImgTwo,
-  Cup,
-  StartPack,
-  Holon,
-  RVK,
-  mincomsv,
-  Appstore,
-  Googleplay,
-  Huawei,
-  MobileApp,
 ];
 export const Close = () => {
   return (

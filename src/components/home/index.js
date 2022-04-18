@@ -1,7 +1,7 @@
 import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import "./home.scss";
-import { ArrowSlide, ImgHome, Portfolio } from "../export/svg";
+import { ImgHome } from "../export/svg";
 import { RegisterModal } from "./../export/modal";
 const array = [
   {
@@ -33,118 +33,65 @@ const array = [
 ];
 
 const [
-  Noutbook,
-  Farhod,
-  Farrux,
-  ProblemSix,
-  ProblemFive,
-  ProblemFour,
-  Problem,
   TiltImgAfterhree,
   TiltImghree,
   TiltImgAfterTwo,
-  Sber,
-  Rostelecom,
-  Mts,
-  Mailru,
-  Ingos,
-  SportMaster,
-  Mondi,
-  AptekaVita,
-  Askona,
-  Ochakovo,
-  Greenway,
-  Msu,
   TiltImg,
   TiltImgAfter,
   TiltImgTwo,
-  Cup,
-  StartPackage,
-  Holon,
-  RVK,
-  mincomsv,
 ] = ImgHome;
 
 const Liders = [
   {
-    img: Sber,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Сбербанк",
   },
   {
-    img: Rostelecom,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Ростелеком",
   },
   {
-    img: Mts,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "МТС",
   },
   {
-    img: Mailru,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Mail.ru",
   },
   {
-    img: Ingos,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Ингосстрах",
   },
   {
-    img: SportMaster,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Спортмастер",
   },
   {
-    img: Mondi,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Монди",
   },
   {
-    img: AptekaVita,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Аптека Вита",
   },
   {
-    img: Askona,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Askona",
   },
   {
-    img: Ochakovo,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Очаково",
   },
   {
-    img: Greenway,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Greenway",
   },
   {
-    img: Msu,
+    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "МСУ",
   },
 ];
 
-const AnyProblems = [
-  {
-    img: Problem,
-    title: "Frontend Development",
-    text: "От нуля до Junior",
-  },
-  {
-    img: ProblemFour,
-    title: "Backend Development",
-    text: "От нуля до Junior ",
-  },
-  {
-    img: ProblemFour,
-    title: "Android App Development",
-  },
-  {
-    img: ProblemFour,
-    title: "Python development",
-  },
-  {
-    img: ProblemFive,
-    title: "Flutter App Development",
-  },
-  {
-    img: ProblemSix,
-    title: "Java Development",
-  },
-];
-const [Chint, Newly, Bukhara, Nura, Therepublick, Steam] = Portfolio;
 const Advantages = {
   pagination: [
     { name: "Chint", id: 1 },
@@ -168,7 +115,7 @@ const Advantages = {
         "Защита контента от копирования и скачивания",
         "Интерактивные курсы в формате SCORM",
       ],
-      img: Chint,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 2,
@@ -180,7 +127,7 @@ const Advantages = {
         "Случайная выборка из готового банка",
         "Таймер и управление попытками сдачи",
       ],
-      img: Newly,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 3,
@@ -192,7 +139,7 @@ const Advantages = {
         "Интеграция с вебинарными сервисами",
         "Готовые курсы от внешних провайдеров",
       ],
-      img: Bukhara,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 4,
@@ -204,7 +151,7 @@ const Advantages = {
         "Сбор оценок и отзывов по курсам",
         "Разработка новых отчетов на заказ",
       ],
-      img: Nura,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 5,
@@ -216,7 +163,7 @@ const Advantages = {
         "Управление дедлайнами и сроками доступа",
         "Синхронизация с кадровыми системами",
       ],
-      img: Therepublick,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 6,
@@ -228,7 +175,7 @@ const Advantages = {
         "Сертификаты по индивидуальному образцу",
         "White-label мобильное приложение",
       ],
-      img: Steam,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 7,
@@ -240,7 +187,7 @@ const Advantages = {
         "Разработка новых функций по запросу",
         "Открытое API для интеграций",
       ],
-      img: Farrux,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
     {
       id: 8,
@@ -252,7 +199,7 @@ const Advantages = {
         "Заказная разработка курсов и тестов",
         "Перенос обучения с другой платформы",
       ],
-      img: Farhod,
+      img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     },
   ],
 };
@@ -289,13 +236,13 @@ function Home() {
           muted
           pip="false"
           playsInline
-          poster="https://www.unicraft.org/static/video/vh1/poster.webp"
+          poster="https://cdn.dribbble.com/users/5000931/screenshots/17114110/dribbble_2.png?compress=1&resize=320x240&vertical=top"
           id="headerVideo"
         >
           <source
-            data-src="https://player.vimeo.com/external/660278794.hd.mp4?s=e4deeeb47bb419b5443c34fa7f0c89b7a31642c9&profile_id=174"
+            data-src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
             type="video/mp4"
-            src="https://player.vimeo.com/external/660278794.hd.mp4?s=e4deeeb47bb419b5443c34fa7f0c89b7a31642c9&profile_id=174"
+            src="https://cdn.dribbble.com/users/5000931/screenshots/17114110/media/f0b2f713ec9fb0a32b9fb9df225a067b.mp4"
           />
         </video>
         <div className="home-content">
@@ -358,31 +305,6 @@ function Home() {
           />
         </div>
       </div>
-      <div className="container_section solve-container">
-        <div className="container_section_title">
-          <h2>Решим любую вашу задачу</h2>
-        </div>
-        <div className="container_section_content">
-          {AnyProblems.map((__res, i) => {
-            return (
-              <div className="card__" key={i + __res?.title}>
-                <div className="card__img">
-                  <img src={__res?.img} alt="" />
-                </div>
-                <div className="__card_title">{__res?.title}</div>
-                <div className="__card_text">От нуля до Junior</div>
-                <button
-                  onClick={() => {
-                    setOpenModal(true);
-                  }}
-                >
-                  Подробнее
-                </button>
-              </div>
-            );
-          })}
-        </div>
-      </div>
       <div className="container_section">
         <div className="container_section_body">
           <div className="container_section_title">
@@ -392,110 +314,33 @@ function Home() {
               в удобные и эргономичные интерфейсы
             </p>
           </div>
-          <div className="container_section_contents">
-            {[Advantages].map((__res, i) => {
-              return (
-                <div className="card___" key={i + __res?.title}>
-                  <div className="card__pagination">
-                    {__res?.pagination.map((_it) => {
-                      return (
-                        <div
-                          className={`card__pagination_item ${
-                            active === _it?.id ? "active" : ""
-                          }`}
-                          onClick={() => setActive(_it?.id)}
-                          key={_it?.id}
-                        >
-                          {_it?.name}
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <div className="card_wrapper__">
-                    <button
-                      className="prev__slide__btn navigation__btn"
-                      onClick={() =>
-                        setActive(active > 1 ? active - 1 : __res?.card?.length)
-                      }
-                    >
-                      <ArrowSlide className="navigation__btn_prev" />
-                    </button>
-
-                    {__res?.card
-                      .filter((responses) => responses?.id === active)
-                      .map((__it) => {
-                        return (
-                          <div key={__it?.id} className={`card_container__`}>
-                            <div className="card__text_left">
-                              <div
-                                className="index_number__"
-                                data-count={active}
-                              />
-                              <div className="card__text_left_title">
-                                {__it?.title}
-                              </div>
-                              <div className="card__text_left_text">
-                                {__it?.list.map((_it) => {
-                                  return (
-                                    <div
-                                      key={_it}
-                                      className="card__text_left_text_item"
-                                    >
-                                      {_it}
-                                    </div>
-                                  );
-                                })}
-                              </div>
-                              <button className="modal_opener__btn">
-                                УЗНАТЬ ПОДРОБНЕЙ
-                              </button>
-                            </div>
-                            <div className="card__img_right">
-                              <img src={__it?.img} alt="" />
-                            </div>
-                          </div>
-                        );
-                      })}
-                    <button
-                      className="next__slide__btn navigation__btn"
-                      onClick={() =>
-                        setActive(__res?.card?.length > active ? active + 1 : 1)
-                      }
-                    >
-                      <ArrowSlide className="navigation__btn_next" />
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
         </div>
       </div>
 
       <div className="container_section_row">
-        <div class="row row-cols-1 row-cols-md-2">
+        <div className="row row-cols-1 row-cols-md-2">
           {array?.map((item, index) => {
             return (
-              <div key={index} class="col mb-4">
-                <div class="card shadow-sm x-shadow-fade-in h-100">
-                  <div class="row h-100 g-0 flex_row">
-                    <div class="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
+              <div key={index} className="col mb-4">
+                <div className="card shadow-sm x-shadow-fade-in h-100">
+                  <div className="row h-100 g-0 flex_row">
+                    <div className="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
                       <img
                         className="Card_img_is"
                         src={item.cardImgIs}
                         alt=""
                       />
                     </div>
-                    <div class="col">
-                      <div class="card-body d-flex flex-column h-100 ps-lg-2">
-                        <div class="d-flex">
-                          <div class="badge bg-light text-dark me-2">
+                    <div className="col">
+                      <div className="card-body d-flex flex-column h-100 ps-lg-2">
+                        <div className="d-flex">
+                          <div className="badge bg-light text-dark me-2">
                             Профессия
                           </div>
                         </div>
-                        <div class="h4 mt-2">
+                        <div className="h4 mt-2">
                           <a
-                            class="stretched-link text-decoration-none link-dark"
+                            className="stretched-link text-decoration-none link-dark"
                             target="_blank"
                             rel="noopener"
                             href="/programs/frontend"
@@ -503,14 +348,16 @@ function Home() {
                             {item.cardTitleIs}
                           </a>
                         </div>
-                        <div class="small text-muted mb-3">{item.cardPIs}</div>
-                        <div class="mt-auto text-muted">
-                          <span class="me-2 text-nowrap">
-                            <span class="fal fa-calendar-alt fa-fw me-1"></span>
+                        <div className="small text-muted mb-3">
+                          {item.cardPIs}
+                        </div>
+                        <div className="mt-auto text-muted">
+                          <span className="me-2 text-nowrap">
+                            <span className="fal fa-calendar-alt fa-fw me-1"></span>
                             13 апреля
                           </span>
-                          <span class="text-nowrap">
-                            <span class="far fa-clock fa-fw me-1"></span>
+                          <span className="text-nowrap">
+                            <span className="far fa-clock fa-fw me-1"></span>
                             10 месяцев
                           </span>
                         </div>
@@ -521,90 +368,6 @@ function Home() {
               </div>
             );
           })}
-        </div>
-      </div>
-      <div className="container_section_row">
-        <div className="_col___">
-          <div className="container_section_title">
-            <h2>Познакомьтесь поближе с Unicraft</h2>
-            <p>
-              Посмотрите <s>5-минутное</s> видео о преимуществах платформы
-            </p>
-          </div>
-          <div className="getcloserlook_about">
-            <b>Unicraft </b> - мощная и эффективная платформа для корпоративного
-            обучения, которая подстраивается под цели компании из любой сферы
-            деятельности
-          </div>
-        </div>
-        <div className="vector__to__noutbook" />
-        <div className="container_section getcloserlook">
-          <iframe
-            title="video"
-            frameBorder={0}
-            allow="autoplay; fullscreen"
-            id="getcloserlook_VideoVimeo"
-            src="https://player.vimeo.com/video/346229565"
-          />
-          <img src={Noutbook} alt="" />
-        </div>
-      </div>
-      <div className="container_section popular">
-        <div className="container_section_body">
-          <div className="container_section_title">
-            <h2>Популярное и признанное решение</h2>
-          </div>
-          <div className="container_section_contents">
-            <img src={Cup} className="cup_img__" alt="" />
-            <div className="container_section_contents_item">
-              <img src={StartPackage} alt="" />
-              <div className="container_section_contents_item_title">
-                <b>Первое</b>
-                <p>место</p>
-              </div>
-              <p>
-                №1 платформа для дистанционного обучения в рейтинге сервисов для
-                бизнеса
-              </p>
-            </div>
-            <div className="container_section_contents_item">
-              <img src={Holon} alt="" />
-              <div className="container_section_contents_item_title">
-                <b>ТОП-100</b>
-                <p> EdTech</p>
-              </div>
-              <p>
-                ТОП-100 EdTech компаний России и СНГ по версии ведущего
-                аналитического агентства
-              </p>
-            </div>
-            <div className="container_section_contents_item">
-              <img src={RVK} alt="" />
-              <div className="container_section_contents_item_title">
-                <b>Лидерство</b>
-                <p> технологий</p>
-              </div>
-              <p>Победитель конкурса "Глобальное технологическое лидерство"</p>
-            </div>
-            <div className="container_section_contents_item">
-              <img src={mincomsv} alt="" />
-              <div className="container_section_contents_item_title">
-                <b>Включено</b>
-                <p> в реестр ПО</p>
-              </div>
-              <p>
-                Платформа дистанционного обучения Unicraft uLearn входит в
-                единый реестр Российского ПО
-              </p>
-            </div>
-          </div>
-          <div className="text__small_">
-            Платформа для организации и проведения дистанционного обучения,
-            многократно доказавшая свою эффективность на практике
-          </div>
-          <div className="connecting__button__cont">
-            <button className="connecting__button__">Подключиться</button>
-          </div>
         </div>
       </div>
     </main>
