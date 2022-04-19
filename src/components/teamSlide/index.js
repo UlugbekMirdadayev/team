@@ -62,40 +62,46 @@ export default function TeamSlide() {
     <>
       <div id="team" className="team_slide">
         <h1>Наши специалисты</h1>
-        <Swiper
-          slidesPerView={4.5}
-          spaceBetween={30}
-          loop={true}
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          className="mySwiper"
-        >
-          {TeamData.map((item, i) => {
-            return (
-              <SwiperSlide key={item?.id}>
-                <div className="card">
-                  <img
-                    src="https://images.pexels.com/photos/11293719/pexels-photo-11293719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="...."
-                  />
-                  <h1>{item.name}</h1>
-                  <h2>{item.position}</h2>
-                  <p>{item.level}</p>
-                  <div className="card_skills">
-                    {item.icons.map((icon, index) => {
-                      return (
-                        <React.Fragment key={index}>{icon}</React.Fragment>
-                      );
-                    })}
-                  </div>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        {
+          (window.onresize = (
+            <Swiper
+              slidesPerView={
+                window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 3 : 5
+              }
+              spaceBetween={30}
+              loop={true}
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper"
+            >
+              {TeamData.map((item, i) => {
+                return (
+                  <SwiperSlide key={item?.id}>
+                    <div className="card">
+                      <img
+                        src="https://images.pexels.com/photos/11293719/pexels-photo-11293719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="...."
+                      />
+                      <h1>{item.name}</h1>
+                      <h2>{item.position}</h2>
+                      <p>{item.level}</p>
+                      <div className="card_skills">
+                        {item.icons.map((icon, index) => {
+                          return (
+                            <React.Fragment key={index}>{icon}</React.Fragment>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          ))
+        }
       </div>
     </>
   );

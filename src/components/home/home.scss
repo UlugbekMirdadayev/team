@@ -868,6 +868,11 @@ main.home {
     margin-left: calc(var(--bs-gutter-x) * -0.5);
     margin-right: calc(var(--bs-gutter-x) * -0.5);
     margin-top: calc(var(--bs-gutter-y) * -1);
+    padding: 1rem;
+
+    @media (max-width: 768px) {
+      display: grid !important;
+    }
   }
   .hexlet-markdown-body table,
   .mb-4 {
@@ -1075,6 +1080,14 @@ main.home {
   .row-cols-md-2 > * {
     flex: 0 0 auto;
     width: 50%;
+    @media screen and (max-width: 1024px) {
+      width: 94vw !important;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100vw !important;
+      margin: auto;
+    }
   }
   .hexlet-markdown-body table,
   .mb-4 {
@@ -1114,12 +1127,17 @@ main.home {
     width: 50%;
   }
   .Card_img_is {
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    object-position: bottom;
   }
   .flex_row {
     display: flex !important;
     flex-direction: row !important;
+    max-height: 200px;
+    min-height: 200px;
+    height: 100%;
   }
   .img_card_size {
     width: 45% !important;
@@ -1143,5 +1161,19 @@ main.home {
   .fa-calendar-alt:before,
   .fa-calendar-days:before {
     content: "";
+  }
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 1.2rem !important;
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
   }
 }

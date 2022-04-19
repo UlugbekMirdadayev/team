@@ -6,7 +6,14 @@ import { RegisterModal } from "./../export/modal";
 import TeamSlide from "../teamSlide";
 import BgVideo from "../../assets/video/bg.mp4";
 import Nura from "../../assets/img/nura.png";
+import Laravel from "../../assets/img/laravel-2.svg";
+import ReactIcon from "../../assets/img/react-2.svg";
+import Pyton from "../../assets/img/python-4.svg";
+import NextJS from "../../assets/img/next-js.svg";
+import Flutter from "../../assets/img/flutter.svg";
+import ReactNative from "../../assets/img/react-native.svg";
 import Portfolio from "../Portfolio";
+import { NavLink } from "react-router-dom";
 const array = [
   {
     cardImgIs:
@@ -15,16 +22,20 @@ const array = [
     cardPIs: "Разработка фронтенд-компонентов веб-приложений",
   },
   {
-    cardImgIs:
-      "https://cdn2.hexlet.io/store/derivatives/744c1029699b21cc531bb3eb621b5e52/fill_webp-540-320.webp",
+    cardImgIs: ReactIcon,
 
-    cardTitleIs: "Python-разработчик",
-    cardPIs: "Разработка веб-приложений на Django",
+    cardTitleIs: "React-разработчик",
+    cardPIs: "Разработка веб-приложений на React",
   },
   {
-    cardImgIs:
-      "https://cdn2.hexlet.io/store/derivatives/48ba16d5318ab0c5585c785b0f513139/fill_webp-540-320.webp",
-    cardTitleIs: "PHP-разработчик",
+    cardImgIs: NextJS,
+
+    cardTitleIs: "Разработчик NextJS",
+    cardPIs: "Разработка фронтенд-компонентов веб-приложений",
+  },
+  {
+    cardImgIs: Laravel,
+    cardTitleIs: "Laravel-разработчик",
     cardPIs: "Разработка веб-приложений на Laravel",
   },
   {
@@ -33,6 +44,22 @@ const array = [
 
     cardTitleIs: "Node.js-разработчик",
     cardPIs: "Разработка бэкенд-компонентов веб-приложений",
+  },
+  {
+    cardImgIs: Pyton,
+
+    cardTitleIs: "Python-разработчик",
+    cardPIs: "Разработка веб-приложений на Python",
+  },
+  {
+    cardImgIs: Flutter,
+    cardTitleIs: "Flutter-разработчик",
+    cardPIs: "Разработка мобильных приложений",
+  },
+  {
+    cardImgIs: ReactNative,
+    cardTitleIs: "React Native-разработчик",
+    cardPIs: "Разработка мобильных приложений",
   },
 ];
 
@@ -182,27 +209,15 @@ function Home() {
                             </div>
                           </div>
                           <div className="h4 mt-2">
-                            <a
+                            <NavLink
                               className="stretched-link text-decoration-none link-dark"
-                              target="_blank"
-                              rel="noopener"
-                              href="/programs/frontend"
+                              to="#advantage"
                             >
                               {item.cardTitleIs}
-                            </a>
+                            </NavLink>
                           </div>
                           <div className="small text-muted mb-3">
                             {item.cardPIs}
-                          </div>
-                          <div className="mt-auto text-muted">
-                            <span className="me-2 text-nowrap">
-                              <span className="fal fa-calendar-alt fa-fw me-1"></span>
-                              13 апреля
-                            </span>
-                            <span className="text-nowrap">
-                              <span className="far fa-clock fa-fw me-1"></span>
-                              10 месяцев
-                            </span>
                           </div>
                         </div>
                       </div>
