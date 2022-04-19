@@ -120,7 +120,6 @@ function Home() {
             id="headerVideo"
           >
             <source
-              data-src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
               type="video/mp4"
               src={BgVideo}
             />
