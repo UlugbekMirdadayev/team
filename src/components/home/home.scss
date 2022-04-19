@@ -62,7 +62,10 @@ main.home {
   .video-bg-intro {
     position: relative;
     height: 50em;
-    width: 100vw;
+    min-width: 100vw;
+    @media screen and (max-width:768px) {
+      height: 90vh;
+    }
     .video-overlay {
       position: absolute;
       top: 0;
@@ -1142,9 +1145,6 @@ main.home {
   .img_card_size {
     width: 45% !important;
   }
-  .img_card_size:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
-  }
   .shadow-lg,
   .shadow.x-shadow-fade-in:hover,
   .x-shadow-fade-in.shadow-sm:hover {
@@ -1152,6 +1152,8 @@ main.home {
   }
   .d-flex {
     gap: 1vw !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
   .text-decoration-none {
     color: black;
