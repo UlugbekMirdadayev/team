@@ -4,6 +4,7 @@ import "./home.scss";
 import { ImgHome } from "../export/svg";
 import { RegisterModal } from "./../export/modal";
 import TeamSlide from "../teamSlide";
+import BgVideo from "../../assets/video/bg.mp4";
 const array = [
   {
     cardImgIs:
@@ -121,7 +122,7 @@ function Home() {
             <source
               data-src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
               type="video/mp4"
-              src="https://cs120.clideo.com/p/PkAHqAo9SveOP1WduPuRvw/8890e0a993227d4ab8297fc46038f33f/pexels-diva-plavalaguna-6985519_MTGu9NZ2.mp4"
+              src={BgVideo}
             />
           </video>
           <div className="home-content">
