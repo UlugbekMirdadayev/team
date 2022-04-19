@@ -76,7 +76,7 @@ function Potfolio() {
                   <img src={data.img} alt="Логотип" />
                 </div>
                 <div className="after">
-                  <p id="app.portfolio.more" />
+                  <p>Подробнее</p>
                 </div>
               </div>
             </a>
