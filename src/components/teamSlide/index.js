@@ -83,7 +83,13 @@ export default function TeamSlide() {
                   <h1>{item.name}</h1>
                   <h2>{item.position}</h2>
                   <p>{item.level}</p>
-                  <div className="card_skills">{item.icons}</div>
+                  <div className="card_skills">
+                    {item.icons.map((icon, index) => {
+                      return (
+                        <React.Fragment key={index}>{icon}</React.Fragment>
+                      );
+                    })}
+                  </div>
                 </div>
               </SwiperSlide>
             );

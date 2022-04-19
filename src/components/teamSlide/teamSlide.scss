@@ -5,6 +5,24 @@
 
   .card {
     text-align: center;
+    padding-bottom: 50px;
+    &:hover {
+      .card_skills {
+        svg {
+          fill: #ffc107;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
     img {
       width: 200px;
       height: 200px;
@@ -12,6 +30,18 @@
       border-radius: 50%;
       margin-bottom: 20px;
       object-position: center;
+    }
+    .card_skills {
+      margin-top: 20px;
+      svg {
+        width: 30px;
+        height: 30px;
+        margin: 0 7px;
+        opacity: 0;
+        transform: translateY(10px);
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }
