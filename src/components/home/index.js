@@ -5,6 +5,7 @@ import { ImgHome } from "../export/svg";
 import { RegisterModal } from "./../export/modal";
 import TeamSlide from "../teamSlide";
 import BgVideo from "../../assets/video/bg.mp4";
+import Nura from "../../assets/img/nura.png";
 const array = [
   {
     cardImgIs:
@@ -49,48 +50,16 @@ const Liders = [
     name: "abba tech",
   },
   {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Ростелеком",
+    img: "http://chint.uz/wp-content/uploads/2019/10/logo.png",
+    name: "Chint",
   },
   {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "МТС",
+    img: Nura,
+    name: "Nuragroup",
   },
   {
     img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
     name: "Mail.ru",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Ингосстрах",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Спортмастер",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Монди",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Аптека Вита",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Askona",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Очаково",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Greenway",
-  },
-  {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "МСУ",
   },
 ];
 
