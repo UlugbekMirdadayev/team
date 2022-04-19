@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -74,7 +74,7 @@ export default function TeamSlide() {
         >
           {TeamData.map((item, i) => {
             return (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item?.id}>
                 <div className="card">
                   <img
                     src="https://images.pexels.com/photos/11293719/pexels-photo-11293719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
