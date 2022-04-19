@@ -60,9 +60,10 @@ export default function TeamSlide() {
   ];
   return (
     <>
-      <div className="team_slide">
+      <div id="team" className="team_slide">
+        <h1>Наши специалисты</h1>
         <Swiper
-          slidesPerView={4}
+          slidesPerView={4.5}
           spaceBetween={30}
           loop={true}
           modules={[Autoplay]}

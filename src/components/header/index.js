@@ -13,6 +13,14 @@ function Header() {
           <NavLink to={"/"} className="header__logo">
             <Logo />
           </NavLink>
+          <nav>
+            <ul>
+              <NavLink to={"/"}>Главная</NavLink>
+              <NavLink to={"#advantage"}>Преимущества</NavLink>
+              <NavLink to={"#team"}>Специалисты</NavLink>
+              <NavLink to={"#portfolio"}>Портфолио</NavLink>
+            </ul>
+          </nav>
           <ul>
             <li>
               <div className="language">

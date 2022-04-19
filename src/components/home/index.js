@@ -6,6 +6,7 @@ import { RegisterModal } from "./../export/modal";
 import TeamSlide from "../teamSlide";
 import BgVideo from "../../assets/video/bg.mp4";
 import Nura from "../../assets/img/nura.png";
+import Portfolio from "../Portfolio";
 const array = [
   {
     cardImgIs:
@@ -88,10 +89,7 @@ function Home() {
             poster="https://i.vimeocdn.com/video/1072231461-bac8c4cdbb9ec924a3b785c5aa318d7b1c59479b74711d5331d7b4fd9f367e52-d?mw=1300&mh=731&q=70"
             id="headerVideo"
           >
-            <source
-              type="video/mp4"
-              src={BgVideo}
-            />
+            <source type="video/mp4" src={BgVideo} />
           </video>
           <div className="home-content">
             <div className="home-content-text">
@@ -150,7 +148,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="container_section">
+        <div id="advantage" className="container_section">
           <div className="container_section_body">
             <div className="container_section_title">
               <h2>Преимущества платформы</h2>
@@ -217,6 +215,7 @@ function Home() {
         </div>
       </main>
       <TeamSlide />
+      <Portfolio />
     </>
   );
 }

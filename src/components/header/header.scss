@@ -33,6 +33,18 @@
           border-left: 1px solid #fff;
         }
       }
+      nav {
+        ul {
+          a {
+            color: #fff;
+            margin: 0 20px;
+            font-size: 1rem;
+            &:hover {
+              color: #ffc107;
+            }
+          }
+        }
+      }
       ul {
         display: flex;
 
