@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 import "./teamSlide.scss";
 import { Autoplay } from "swiper";
 import { ExportSvg } from "../export/svg";
+import Farhod from "../../assets/img/farxod.jpg";
 export default function TeamSlide() {
   const { AiFillHtml5, DiCss3Full, IoLogoJavascript, DiReact } = ExportSvg;
 
@@ -82,10 +83,7 @@ export default function TeamSlide() {
                 return (
                   <SwiperSlide key={item?.id}>
                     <div className="card">
-                      <img
-                        src="https://images.pexels.com/photos/11293719/pexels-photo-11293719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="...."
-                      />
+                      <img src={Farhod} alt="...." />
                       <h1>{item.name}</h1>
                       <h2>{item.position}</h2>
                       <p>{item.level}</p>

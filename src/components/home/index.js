@@ -2,7 +2,7 @@ import React from "react";
 import VanillaTilt from "vanilla-tilt";
 import "./home.scss";
 import { ImgHome } from "../export/svg";
-import { RegisterModal } from "./../export/modal";
+import { RegisterModal, ModalClick } from "./../export/modal";
 import TeamSlide from "../teamSlide";
 import BgVideo from "../../assets/video/bg.mp4";
 import Nura from "../../assets/img/nura.png";
@@ -16,27 +16,34 @@ import Portfolio from "../Portfolio";
 import { NavLink } from "react-router-dom";
 import AbbaCoding from "../../assets/img/abbacoding.svg";
 import AbbaMedia from "../../assets/img/abbamedia.svg";
+
 const array = [
   {
     cardImgIs:
       "https://cdn2.hexlet.io/store/derivatives/98b6887c25e9259ec9d401d7779105c8/fill_webp-540-320.webp",
     cardTitleIs: "Фронтенд-разработчик",
     cardPIs: "Разработка фронтенд-компонентов веб-приложений",
+    modalTitle:
+      "FrontEnd разработчик создает видимую для пользователя часть веб-страницы и его главная задача – точно передать в верстке то, что создал дизайнер, а также реализовать пользовательскую логику.",
   },
   {
     cardImgIs: ReactIcon,
-
+    modalTitle:
+      "React разработчик - это специалист, который умеет верстать веб-страницы, имеет хорошие знания языка программирования JavaScript, знает фреймворк React, а также целый ряд других веб-технологий, которые используются во время создания клиентской стороны веб-сайта.",
     cardTitleIs: "React-разработчик",
     cardPIs: "Разработка веб-приложений на React",
   },
   {
     cardImgIs: NextJS,
-
+    modalTitle:
+      "Next. js — фреймворк для серверного рендеринга веб-приложений на React. Это одно из самых популярных дополнений к этой JavaScript-библиотеке. С его помощью легко создавать производительные и оптимизированные для поисковых систем сайты, которые понравятся не только роботам-краулерам, но и пользователям.",
     cardTitleIs: "Разработчик NextJS",
     cardPIs: "Разработка фронтенд-компонентов веб-приложений",
   },
   {
     cardImgIs: Laravel,
+    modalTitle:
+      "Таким образом, разработчик на Laravel – это специалист, который занимается созданием бэкенда для сайтов и веб-приложений. Какие обязанности выполняет программист на Ларавел: Программирует backend на PHP с использованием фреймворка Laravel.",
     cardTitleIs: "Laravel-разработчик",
     cardPIs: "Разработка веб-приложений на Laravel",
   },
@@ -45,20 +52,27 @@ const array = [
       "https://cdn2.hexlet.io/store/derivatives/5033764023c5f12fd1a911632cacd951/fill_webp-540-320.webp",
 
     cardTitleIs: "Node.js-разработчик",
+    modalTitle:
+      "Разработчик на Node. js – это программист, который занимается написанием кода для frontend и backend, то есть самостоятельно создает весь функционал сайта или веб-приложения. Такого специалиста можно отнести к категории full stack.",
     cardPIs: "Разработка бэкенд-компонентов веб-приложений",
   },
   {
     cardImgIs: Pyton,
-
+    modalTitle:
+      "Python-разработчик — это специалист, создающий программы, приложения и код вообще на языке программирования Python. Он пишет мобильные и десктопные приложения, создает программное обеспечение для банкоматов, ЧПУ-станков, телекоммуникационного и другого высокотехнологичного оборудования.",
     cardTitleIs: "Python-разработчик",
     cardPIs: "Разработка веб-приложений на Python",
   },
   {
     cardImgIs: Flutter,
+    modalTitle:
+      "Flutter — комплект средств разработки и фреймворк с открытым исходным кодом для создания мобильных приложений под Android и iOS, веб-приложений, а также настольных приложений под Windows, macOS и Linux с использованием языка программирования Dart, разработанный и развиваемый корпорацией Google.",
     cardTitleIs: "Flutter-разработчик",
     cardPIs: "Разработка мобильных приложений",
   },
   {
+    modalTitle:
+      "React Native — это кроссплатформенный фреймворк с открытым исходным кодом для разработки нативных мобильных и настольных приложений на JavaScript и TypeScript, созданный Facebook, Inc.",
     cardImgIs: ReactNative,
     cardTitleIs: "React Native-разработчик",
     cardPIs: "Разработка мобильных приложений",
@@ -95,6 +109,8 @@ const Liders = [
 
 function Home() {
   const [openModal, setOpenModal] = React.useState(false);
+  const [openStack, setOpenStack] = React.useState(false);
+  const [stackData, setStackData] = React.useState([]);
   const options = {
     scale: 1,
     speed: 1000,
@@ -105,6 +121,13 @@ function Home() {
     <>
       <main className="home">
         {openModal && <RegisterModal open={openModal} setOpen={setOpenModal} />}
+        {
+          <ModalClick
+            open={openStack}
+            setOpen={setOpenStack}
+            data={stackData}
+          />
+        }
         <div className="video-bg-intro">
           <div className="video-overlay" />
           <video
@@ -195,7 +218,13 @@ function Home() {
               return (
                 <div key={index} className="col mb-4">
                   <div className="card shadow-sm x-shadow-fade-in h-100">
-                    <div className="row h-100 g-0 flex_row">
+                    <div
+                      onClick={() => {
+                        setStackData(item);
+                        setOpenStack(true);
+                      }}
+                      className="row h-100 g-0 flex_row"
+                    >
                       <div className="col-sm-5 col-md-12 col-lg-5 p-2 d-flex align-items-center justify-content-center img_card_size">
                         <img
                           className="Card_img_is"
