@@ -12,6 +12,7 @@
   .card {
     text-align: center;
     padding-bottom: 50px;
+    transition: 300ms ease all !important;
     &:hover {
       .card_skills {
         svg {
@@ -47,6 +48,22 @@
         transform: translateY(10px);
         pointer-events: none;
         transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .swiper {
+    overflow: visible !important;
+
+    .swiper-slide-active {
+      .card {
+        transform: scale(1.3);
+        .card_skills {
+          svg {
+            fill: #ffc107;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
       }
     }
   }

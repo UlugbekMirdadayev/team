@@ -71,8 +71,9 @@ export default function TeamSlide() {
               spaceBetween={30}
               loop={true}
               modules={[Autoplay]}
+              centeredSlides={true}
               autoplay={{
-                delay: 2500,
+                delay: 2000,
                 disableOnInteraction: false,
               }}
               className="mySwiper"
