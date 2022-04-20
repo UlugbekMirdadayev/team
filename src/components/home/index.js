@@ -14,6 +14,8 @@ import Flutter from "../../assets/img/flutter.svg";
 import ReactNative from "../../assets/img/react-native.svg";
 import Portfolio from "../Portfolio";
 import { NavLink } from "react-router-dom";
+import AbbaCoding from "../../assets/img/abbacoding.svg";
+import AbbaMedia from "../../assets/img/abbamedia.svg";
 const array = [
   {
     cardImgIs:
@@ -74,7 +76,7 @@ const [
 
 const Liders = [
   {
-    img: "http://www.abbatech.com/wp-content/uploads/2018/01/logo-abba6.jpg",
+    img: AbbaCoding,
     name: "abba tech",
   },
   {
@@ -86,8 +88,8 @@ const Liders = [
     name: "Nuragroup",
   },
   {
-    img: "https://music.youtube.com/coming-soon/images/yt-music-icon.svg?cache=4cc9770",
-    name: "Mail.ru",
+    img: AbbaMedia,
+    name: "Abba media",
   },
 ];
 
