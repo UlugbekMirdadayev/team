@@ -1,18 +1,24 @@
 .team_slide {
   width: 100%;
   height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+
   > h1 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
     color: #000;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
   }
   .card {
     text-align: center;
     padding-bottom: 50px;
     transition: 300ms ease all !important;
+    transform: scale(0.8);
     &:hover {
       .card_skills {
         svg {
@@ -24,11 +30,11 @@
     }
     h1 {
       font-weight: 500;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     h2 {
       font-weight: 300;
-      font-size: 1.2rem;
+      font-size: .9rem;
     }
     img {
       width: 200px;
