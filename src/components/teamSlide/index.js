@@ -6,6 +6,8 @@ import "./teamSlide.scss";
 import { Autoplay } from "swiper";
 import { ExportSvg } from "../export/svg";
 import Farhod from "../../assets/img/farxod.jpg";
+import Abbosbek from "../../assets/img/Abbosbek.JPG";
+import Ismoil from "../../assets/img/ismoil.jpg";
 export default function TeamSlide() {
   const { AiFillHtml5, DiCss3Full, IoLogoJavascript, DiReact } = ExportSvg;
 
@@ -13,6 +15,7 @@ export default function TeamSlide() {
     {
       id: 1,
       name: "Номонов Фарход",
+      userImg:Farhod,
       position: "Frontend разработчик",
       level: "Стаж работы: 3 года",
       icons: [
@@ -25,6 +28,7 @@ export default function TeamSlide() {
     {
       id: 2,
       name: "Мирдадаев Улугбек",
+      userImg:Farhod,
       position: "Frontend разработчик",
       level: "Middle",
       icons: [
@@ -37,6 +41,7 @@ export default function TeamSlide() {
     {
       id: 3,
       name: "Муминов Исмоил",
+      userImg:Ismoil,
       position: "JavaScript разработчик",
       level: "Middle",
       icons: [
@@ -49,7 +54,20 @@ export default function TeamSlide() {
     {
       id: 4,
       name: "Садиков Дилшод",
+      userImg:Farhod,
       position: "Full-Stack разработчик",
+      level: "Senior разработчик",
+      icons: [
+        <AiFillHtml5 />,
+        <DiCss3Full />,
+        <IoLogoJavascript />,
+        <DiReact />,
+      ],
+    },  {
+      id: 5,
+      name: "Мирзаахмедов Аббосбей",
+      userImg:Abbosbek,
+      position: "JavaScript разработчик",
       level: "Senior разработчик",
       icons: [
         <AiFillHtml5 />,
@@ -83,7 +101,7 @@ export default function TeamSlide() {
                 return (
                   <SwiperSlide key={item?.id}>
                     <div className="card">
-                      <img src={Farhod} alt="...." />
+                      <img src={item.userImg} alt="...." />
                       <h1>{item.name}</h1>
                       <h2>{item.position}</h2>
                       <p>{item.level}</p>

@@ -77,7 +77,7 @@ function Footer() {
         </div>
 
         <div className="footer-copyright">
-          <p>Unicraft © 2016-2022 </p>
+          <p>TECH DATA SOFT © 2021-2022 </p>
         </div>
       </div>
     </footer>
