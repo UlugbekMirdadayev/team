@@ -4,7 +4,7 @@ import Facebook from "../../assets/img/facebook.svg";
 import Instagram from "../../assets/img/instagram.svg";
 import Dzen from "../../assets/img/dzen.svg";
 import Vk from "../../assets/img/vkontakte.svg";
-
+import LogoTech  from "../../assets/img/logo_18.jpg";
 function Footer() {
   return (
     <footer className="container-footer">
@@ -77,7 +77,7 @@ function Footer() {
         </div>
 
         <div className="footer-copyright">
-          <p>TECH DATA SOFT © 2021-2022 </p>
+          <p><img src={LogoTech} alt="" /> TECH DATA SOFT © 2021-2022 </p>
         </div>
       </div>
     </footer>

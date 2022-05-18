@@ -180,3 +180,16 @@
     }
   }
 }
+
+
+.LogoStyle{
+  width: 35px;
+  height: 30px;
+  object-fit: contain;
+}.footer-copyright img{
+  width: 3vw;
+  height: 3vw;
+  object-fit: cover;
+}.footer-copyright p{
+  display: flex;align-items: center;
+}

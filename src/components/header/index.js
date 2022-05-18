@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import { Logo } from "./../export/svg";
+import { NavLink } from "react-router-dom";
+// import { Logo } from "./../export/svg";
+import LogoTech  from "../../assets/img/logo777.png";
 import "./header.scss";
 
 function Header() {
@@ -11,7 +12,7 @@ function Header() {
       <div className="w100">
         <header className="header">
           <NavLink to={"/"} className="header__logo">
-            <Logo />
+          <img className="LogoStyle" src={LogoTech} alt="" />
           </NavLink>
           <nav>
             <ul>
