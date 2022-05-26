@@ -5,19 +5,20 @@ import Instagram from "../../assets/img/instagram.svg";
 import Dzen from "../../assets/img/dzen.svg";
 import Vk from "../../assets/img/vkontakte.svg";
 import LogoTech  from "../../assets/img/logo_18.jpg";
+import { t } from "i18next";
 function Footer() {
   return (
     <footer className="container-footer">
       <div className="footer">
         <div className="has-text-centered">
-          <p>Есть вопросы? Звоните!</p>
+          <p>{t('HaveCall')}</p>
           <a href="tel:+998 90 754-21-98">+998 90 990 99 90</a>
         </div>
 
         <div className="footer-docs">
           <div className="footer-docs__item">
             <a href="/docs/oferta" target={"_blank"} rel="nooperer noreferrer">
-              Публичная оферта
+            {t('Publicoffer')}
             </a>
           </div>
           <div className="footer-docs__item">
@@ -26,12 +27,12 @@ function Footer() {
               target={"_blank"}
               rel="nooperer noreferrer"
             >
-              Cогласие на обработку персональных данных
+{t('Consentotheprocessing')}
             </a>
           </div>
           <div className="footer-docs__item">
             <a href="/docs/policy" target={"_blank"} rel="nooperer noreferrer">
-              Политика конфиденциальности
+             {t('PrivacyPolicy')}
             </a>
           </div>
           <div className="footer-docs__item">
@@ -40,7 +41,7 @@ function Footer() {
               target={"_blank"}
               rel="nooperer noreferrer"
             >
-              Соглашение об использовании курсов
+             {t('CourseAgreement')}
             </a>
           </div>
         </div>

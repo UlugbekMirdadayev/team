@@ -7,8 +7,15 @@ import { LoginAuntification } from "./adminComponent/login";
 import "./assets/style/main.scss";
 import Home from "./components/home";
 import Rate from "./components/rate";
+import { useTranslation } from "react-i18next";
+
 
 function App() {
+  const { t, i18n, ready } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   const location = useLocation();
 
   React.useEffect(() => {

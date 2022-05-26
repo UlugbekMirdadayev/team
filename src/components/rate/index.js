@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { PresentBox } from "../export/svg";
@@ -88,23 +89,22 @@ function Rate() {
   return (
     <div className="rate_container">
       <div className="rate">
-        <h1>Тарифы</h1>
+        <h1>{t('Tariffs')}</h1>
         <p>
-          Сравните пакеты предложений и выберите подходящие возможности и
-          стоимость
+         {t('Compareoffer')}
         </p>
         <div className="tariff_blocks_period">
-          <p>Квартал</p>
+          <p>{t('Quarter')}</p>
           <div className="tariff_blocks_period_switch">
             <div className="switch"></div>
           </div>
           <div className="tariff_blocks_period_year">
-            <p>Год</p>
+            <p>{t('Year')}</p>
             <div className="tariff_img">
               <PresentBox />
             </div>
             <div className="tariff_title_flex">
-              <p>2 месяца</p>
+              <p>{t('twomonth')}</p>
               <p>даром</p>
             </div>
           </div>
@@ -127,7 +127,7 @@ function Rate() {
                   );
                 })}
                 <h1>{item?.mainTitle}</h1>
-                <p>Пользователей</p>
+                <p>{t('Users')}</p>
                 <div className="tariff_card_number">
                   {item?.users.map((user, i) => {
                     return (
@@ -145,30 +145,30 @@ function Rate() {
                       </h1>
                     );
                   })}
-                  <h2>за квартал</h2>{" "}
+                  <h2>{t('forquarter')}</h2>{" "}
                   <div className="user__price__months">
                     {item?.users.map(({ price, number }) => {
                       return (
                         <p>
-                          {priceUser(price, number)} за пользователя в месяц
+                          {priceUser(price, number)}{t('permonth')}
                         </p>
                       );
                     })}
                   </div>
-                  <button>ЗАКАЗАТЬ</button>
-                  <NavLink to={"#"}>Оплатить онлайн</NavLink>
+                  <button>{t('order')}</button>
+                  <NavLink to={"#"}>{t('Payonline')}</NavLink>
                 </div>
                 <div className="tariff_card_price_bottom">
-                  <p>{item?.userTo} пользователей</p>
+                  <p>{item?.userTo} {t('users')}</p>
                   <p>
                     {item?.storage
-                      ? "50 ГБ для хранения данных"
-                      : "Безлимитное хранилище"}
+                      ? t('GBstorage')
+                      : t('Unlimitedstorage')}
                   </p>
-                  <p>{item?.individual && "Индивидуальный стиль"}</p>
-                  <p>{item?.integration && "Интеграции"}</p>
-                  <p>{item?.edit && "Спец. тарифы на доработки"}</p>
-                  <p>{item?.version && "Box-версия (опционально)"}</p>
+                  <p>{item?.individual && t('Individualstyle')}</p>
+                  <p>{item?.integration && t('Integrations') }</p>
+                  <p>{item?.edit &&  t('Specialistupgradefees') }</p>
+                  <p>{item?.version &&  t('Boxversion')}</p>
                 </div>
               </div>
             );

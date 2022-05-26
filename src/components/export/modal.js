@@ -1,6 +1,7 @@
 import "./export.scss";
 import { Close } from "./svg";
 import Video from "../../assets/video/bg.mp4";
+import { t } from "i18next";
 export const RegisterModal = ({ open, setOpen }) => {
   return (
     <div className="modal">
@@ -25,7 +26,7 @@ export const RegisterModal = ({ open, setOpen }) => {
         >
           <Close />
         </div>
-        <h1>Hello Dubai</h1>
+        <h1>{t('HelloDubai')}</h1>
         <div className="modal_flex">
           <div className="modal_left"></div>
           <div className="modal_right"></div>

@@ -2,7 +2,10 @@ import React from "react";
 import Nura from "../../assets/img/nura.png";
 import "./portfolio.scss";
 import Buckhara from "../../assets/img/Buckhara.svg";
-
+import Clean from "../../assets/img/clean.svg";
+import Old from "../../assets/img/old.jpg";
+import sarkor from "../../assets/img/sarkor.png"
+import { t } from "i18next";
 function Potfolio() {
   const Works = [
     {
@@ -39,7 +42,7 @@ function Potfolio() {
 
     {
       id: "8",
-      img: "https://beshr.app.techdatasoft.uz/images/1649524776slider_home_1649424305slider_home_1.png",
+      img: "https://beshr.techdatasoft.uz/static/media/1.512087ff09b72909bda9.png",
       link: "https://beshr.techdatasoft.uz/",
       animation: "fade-left",
     },
@@ -56,10 +59,29 @@ function Potfolio() {
       link: "https://nura.new.techdatasoft.uz/",
       animation: "fade-right",
     },
+    {
+      id: "11",
+      img: Clean,
+      link: "https://test.moivenik.info/",
+      animation: "fade-right",
+    },
+    {
+      id: "12",
+      img: sarkor,
+      link: "https://sarkor.techdatasoft.uz/",
+      animation: "fade-right",
+    },
+   
+    {
+      id: "13",
+      img: Old,
+      link: "https://old.master.devsport.ru/",
+      animation: "fade-right",
+    },
   ];
   return (
     <div id="portfolio" className="portfolio">
-      <h1>Наши работы</h1>
+      <h1>{t('Ourwork')}</h1>
       <div className="d_flex">
         {Works?.map((data) => {
           return (
@@ -76,7 +98,7 @@ function Potfolio() {
                   <img src={data.img} alt="Логотип" />
                 </div>
                 <div className="after">
-                  <p>Подробнее</p>
+                  <p>{t('More')}</p>
                 </div>
               </div>
             </a>
