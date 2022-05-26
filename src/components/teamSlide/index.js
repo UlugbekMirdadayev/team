@@ -16,10 +16,10 @@ export default function TeamSlide() {
   const TeamData = [
     {
       id: 1,
-      name: t('NomonovFarhod'),
-      userImg:Farhod,
-      position: t('Frontenddeveloper'),
-      level: t('Work3years'),
+      name: t("NomonovFarhod"),
+      userImg: Farhod,
+      position: t("Frontenddeveloper"),
+      level: t("Work3years"),
       icons: [
         <AiFillHtml5 />,
         <DiCss3Full />,
@@ -29,10 +29,10 @@ export default function TeamSlide() {
     },
     {
       id: 2,
-      name: t('MirdadaevUlugbek'),
-      userImg:Farhod,
-      position: t('Frontenddeveloper'),
-      level: t('Middle'),
+      name: t("MirdadaevUlugbek"),
+      userImg: Farhod,
+      position: t("Frontenddeveloper"),
+      level: t("Middle"),
       icons: [
         <AiFillHtml5 />,
         <DiCss3Full />,
@@ -42,10 +42,10 @@ export default function TeamSlide() {
     },
     {
       id: 3,
-      name: t('MuminovIsmoil'),
-      userImg:Ismoil,
-      position: t('JavaScriptdeveloper'),
-      level: t('Middle'),
+      name: t("MuminovIsmoil"),
+      userImg: Ismoil,
+      position: t("JavaScriptdeveloper"),
+      level: t("Middle"),
       icons: [
         <AiFillHtml5 />,
         <DiCss3Full />,
@@ -55,34 +55,23 @@ export default function TeamSlide() {
     },
     {
       id: 4,
-      name: t('SadikovDilshod'),
-      userImg:Farhod,
-      position: t('Fullstackdeveloper'),
-      level: t('Seniordeveloper'),
+      name: t("SadikovDilshod"),
+      userImg: Farhod,
+      position: t("Fullstackdeveloper"),
+      level: t("Seniordeveloper"),
       icons: [
         <AiFillHtml5 />,
         <DiCss3Full />,
         <IoLogoJavascript />,
         <DiReact />,
       ],
-    },  {
+    },
+    {
       id: 5,
-      name: t('MirzaahmedovAbbosbey'),
-      userImg:Abbosbek,
-      position: t('JavaScriptdeveloper'),
-      level: t('Seniordeveloper'),
-      icons: [
-        <AiFillHtml5 />,
-        <DiCss3Full />,
-        <IoLogoJavascript />,
-        <DiReact />,
-      ],
-    }, {
-      id: 6,
-      name: t('YoqubjanovShohjaxon'),
-      userImg:YoqubjanovShohjaxon,
-      position: t('JavaScriptdeveloper'),
-      level: t('Seniordeveloper'),
+      name: t("MirzaahmedovAbbosbey"),
+      userImg: Abbosbek,
+      position: t("JavaScriptdeveloper"),
+      level: t("Seniordeveloper"),
       icons: [
         <AiFillHtml5 />,
         <DiCss3Full />,
@@ -94,7 +83,7 @@ export default function TeamSlide() {
   return (
     <>
       <div id="team" className="team_slide">
-        <h1>{t('Ourspecialists')}</h1>
+        <h1>{t("Ourspecialists")}</h1>
         {
           (window.onresize = (
             <Swiper
